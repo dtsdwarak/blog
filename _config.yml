@@ -1,0 +1,23 @@
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           pretty
+relative_permalinks: true
+
+# Setup
+title:               Dwarak
+tagline:             'Code. Life. Fun.'
+description:         'is a i-really-want-to-be-a-guitarist guy. Loves Gadgets, geeks and girls. Is an engineer by profession and blogger by passion.'
+url:                 'http://localhost:4000'
+baseurl:             ''
+paginate:            5
+timezone:            'Asia/Kolkata'
+
+# About/contact
+author:
+  name:              Dwaraka Nath
+  url:               https://twitter.com/dtsdwarak
+  email:             me@dwarak.in
+
+# Custom vars
+version:             1.0.1
