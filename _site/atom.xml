@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>Dwarak</title>
- <link href="http://localhost:4000/atom.xml" rel="self"/>
- <link href="http://localhost:4000/"/>
- <updated>2015-05-30T11:20:40+05:30</updated>
- <id>http://localhost:4000</id>
+ <link href="http://dtsdwarak.github.io/atom.xml" rel="self"/>
+ <link href="http://dtsdwarak.github.io/"/>
+ <updated>2015-05-30T11:50:10+05:30</updated>
+ <id>http://dtsdwarak.github.io</id>
  <author>
    <name>Dwaraka Nath</name>
    <email>me@dwarak.in</email>
@@ -14,9 +14,9 @@
  
  <entry>
    <title>Introducing Lanyon</title>
-   <link href="http://localhost:4000/2014/01/02/introducing-lanyon/"/>
+   <link href="http://dtsdwarak.github.io/2014/01/02/introducing-lanyon/"/>
    <updated>2014-01-02T00:00:00+05:30</updated>
-   <id>http://localhost:4000/2014/01/02/introducing-lanyon</id>
+   <id>http://dtsdwarak.github.io/2014/01/02/introducing-lanyon</id>
    <content type="html">&lt;p&gt;Lanyon is an unassuming &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; theme that places content first by tucking away navigation in a hidden drawer. It’s based on &lt;a href=&quot;http://getpoole.com&quot;&gt;Poole&lt;/a&gt;, the Jekyll butler.
 &lt;!--break--&gt;
 ### Built on Poole&lt;/p&gt;
@@ -59,9 +59,9 @@
  
  <entry>
    <title>Example content</title>
-   <link href="http://localhost:4000/2014/01/01/example-content/"/>
+   <link href="http://dtsdwarak.github.io/2014/01/01/example-content/"/>
    <updated>2014-01-01T00:00:00+05:30</updated>
-   <id>http://localhost:4000/2014/01/01/example-content</id>
+   <id>http://dtsdwarak.github.io/2014/01/01/example-content</id>
    <content type="html">&lt;div class=&quot;message&quot;&gt;
   Howdy! This is an example blog post that shows several types of HTML content supported in this theme.
 &lt;/div&gt;
@@ -187,13 +187,13 @@
  
  <entry>
    <title>What's Jekyll?</title>
-   <link href="http://localhost:4000/2013/12/31/whats-jekyll/"/>
+   <link href="http://dtsdwarak.github.io/2013/12/31/whats-jekyll/"/>
    <updated>2013-12-31T00:00:00+05:30</updated>
-   <id>http://localhost:4000/2013/12/31/whats-jekyll</id>
+   <id>http://dtsdwarak.github.io/2013/12/31/whats-jekyll</id>
    <content type="html">&lt;p&gt;&lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes.
 &lt;!--break--&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/jekyll.jpg&quot; alt=&quot;Screenshot&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://dtsdwarak.github.io/assets/jekyll.jpg&quot; alt=&quot;Screenshot&quot; /&gt;&lt;/p&gt;
 
 &lt;iframe width=&quot;560&quot; height=&quot;420&quot; src=&quot;http://www.youtube.com/embed/WowJBRMtpc?color=white&amp;amp;theme=light&quot;&gt;&lt;/iframe&gt;
 
