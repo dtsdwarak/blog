@@ -4,7 +4,7 @@
  <title>Dwarak</title>
  <link href="http://dtsdwarak.github.io/atom.xml" rel="self"/>
  <link href="http://dtsdwarak.github.io/"/>
- <updated>2015-06-01T15:47:20+05:30</updated>
+ <updated>2015-06-01T16:11:35+05:30</updated>
  <id>http://dtsdwarak.github.io</id>
  <author>
    <name>Dwaraka Nath</name>
@@ -193,9 +193,7 @@
    <content type="html">&lt;p&gt;&lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes.
 &lt;!--break--&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://dtsdwarak.github.io/assets/jekyll.jpg&quot; alt=&quot;Screenshot&quot; /&gt;&lt;/p&gt;
-
-&lt;iframe width=&quot;560&quot; height=&quot;420&quot; src=&quot;http://www.youtube.com/embed/WowJBRMtpc?color=white&amp;amp;theme=light&quot;&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/jekyll.jpg&quot; alt=&quot;Screenshot&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;From &lt;a href=&quot;https://github.com/mojombo/jekyll/blob/master/README.markdown&quot;&gt;the project’s readme&lt;/a&gt;:&lt;/p&gt;
 
