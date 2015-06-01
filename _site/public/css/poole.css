@@ -129,6 +129,8 @@ dd {
 
 /* Misc */
 hr {
+  height: 2%;
+  color: red;
   position: relative;
   margin: 1.5rem 0;
   border: 0;
