@@ -39,6 +39,13 @@
 /* Roboto Font from Google */
 @import url(http://fonts.googleapis.com/css?family=Roboto:300);
 
+/* Custom Date Style */
+.date-format{
+  color:#55676A; 
+  font-size:12pt; 
+  float:right;
+}
+
 
 html,
 body {
