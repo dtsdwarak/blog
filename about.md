@@ -4,27 +4,20 @@ title: About
 ---
 
 <p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
+	23. <a href="http://en.wikipedia.org/wiki/List_of_White_Collar_characters#Mozzie" target="_blank">Mozzie</a> of Madras. Square eyes. Shorcut show-off. Sluggard. Lousy singer. <a href="http://thehangover.wikia.com/wiki/Alan_Garner" target="_blank">Alan</a> of my wolfpack.
 </p>
 
-In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+Well, truth be told I'm that modest geeky guy that every gang has, shying away credits that the aunties and uncles next door shower when he formats their PC with the latest Windows, **desperately** hoping to shed that typical image of him to see some inroads into actual technology. :D
 
-There are currently two themes built on Poole:
+So, on this quest to become my own version of Mozzie, more often than not, you'll find notes on technology, occasionally some rant and some great gossip. 
 
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
+Happy reading!
 
-Learn more and contribute on [GitHub](https://github.com/poole).
+---
 
-## Setup
+### This blog owes its being to
 
-Some fun facts about the setup of this project include:
-
-* Built for [Jekyll](http://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Sublime Text 2](http://sublimetext.com), an amazing code editor
-* Designed and developed while listening to music like [Blood Bros Trilogy](https://soundcloud.com/maddecent/sets/blood-bros-series)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
-
-Thanks for reading!
+* [Jekyll](http://jekyllrb.com/)
+* [Sublime Text](http://www.sublimetext.com/3)
+* [Lanyon](http://lanyon.getpoole.com/) theme by [@mdo](https://twitter.com/mdo)
+* [Github Pages](https://pages.github.com/) for the ultra-awesome free hosting!
