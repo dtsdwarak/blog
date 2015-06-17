@@ -15,6 +15,17 @@
   </title>
 
   
+  <!--
+    redirect users to the https version of the website.
+    but: only check when on the production domain, as set in _config.yml.
+   -->
+  <script type="text/javascript">
+    var enforce = "blog.dwarak.in";
+    if ((enforce == window.location.host) && (window.location.protocol != "https:"))
+      window.location = window.location.toString().replace(/^http:/, "https:");
+  </script>
+
+  
 
 <!-- Search Headers -->
   <meta name="description" content="Tech, Gossip and Musings from Dwarak's Diary">

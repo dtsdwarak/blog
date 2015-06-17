@@ -8,7 +8,7 @@ relative_permalinks: true
 title:               Dwarak
 tagline:             'Code. Life. Fun.'
 description:         'is a i-really-want-to-be-a-guitarist guy. Loves Gadgets, geeks and girls. Is an engineer by profession and blogger by passion.'
-url:                 'http://dtsdwarak.github.io'
+url:                 'http://blog.dwarak.in'
 baseurl:             ''
 paginate:            5
 timezone:            'Asia/Kolkata'
@@ -23,4 +23,4 @@ author:
 version:             1.0.1
 
 # Enforce SSL
-enforce_ssl: dtsdwarak.github.io
+enforce_ssl: blog.dwarak.in
