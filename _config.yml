@@ -8,7 +8,7 @@ relative_permalinks: true
 title:               Dwarak
 tagline:             'Code. Life. Fun.'
 description:         'is a i-really-want-to-be-a-guitarist guy. Loves Gadgets, geeks and girls. Is an engineer by profession and blogger by passion.'
-url:                 'http://blog.dwarak.in'
+url:                 'https://blog.dwarak.in'
 baseurl:             ''
 paginate:            5
 timezone:            'Asia/Kolkata'
