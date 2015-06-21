@@ -42,8 +42,8 @@
 /* Custom Date Style */
 .date-format{
   color:#55676A; 
-  font-size:12pt; 
-  float:right;
+  font-size:15pt; 
+  /*float:left;*/
 }
 
 
@@ -108,7 +108,7 @@ h1, h2, h3, h4, h5, h6 {
 .masthead {
   padding-top:    1rem;
   padding-bottom: 1rem;
-  margin-bottom: 3rem;
+  /*margin-bottom: 3rem;*/
   border-bottom: 1px solid #eee;
 }
 .masthead-title {
