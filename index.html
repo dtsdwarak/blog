@@ -11,7 +11,9 @@ title: Home
         {{ post.title }} 
       </a></h2>
       <!-- <h3 class="date-format">{{ post.date | date_to_string }}</h3> -->
-      <p style="display:inline">{{ post.content | split:'<!--break-->' | first }}</p>
+      <p style="text-align: justify">
+        {{ post.content | split:'<!--break-->' | first }}
+      </p>
       {% if post.content contains '<!--break-->' %}
         <a href="{{ post.url }}">read more</a>
       {% endif %}
