@@ -346,7 +346,7 @@ tbody tr:nth-child(odd) th {
   display:block;
   height: 200px;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto
 }
 
 .post-content:after {
