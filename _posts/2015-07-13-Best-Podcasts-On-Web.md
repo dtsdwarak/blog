@@ -11,7 +11,7 @@ Podcasts have invariably started to become a part of our daily diet for news and
 
 ![badvoltage]({{site.baseurl}}/assets/images/bad-voltage.jpg)
 
-Excellent choice if you are into open source. I've been following [Bryan Lunduke](http://lunduke.com/) since the days when he was a part of [Linux Action Show](http://www.jupiterbroadcasting.com/tag/linux-action-show/). And it was only for him that I did follow this podcast initially. And trust me, its amazing!
+Excellent choice if you are into open source. I've been following [Bryan Lunduke](http://lunduke.com/) since the days when he was a part of [Linux Action Show](#linux-action-showhttpwwwjupiterbroadcastingcomtaglinux-action-show). And it was only for him that I did follow this podcast initially. And trust me, its amazing!
 
 ##[Changelog](https://changelog.com/)
 
