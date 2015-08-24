@@ -34,7 +34,7 @@
 
   <!-- Facebook Headers-->
   <meta property="og:title" content="{{ page.title }}"> 
-  <meta property="og:description" content="Tech, Gossip and Musings from Dwarak's Diary"> 
+  <meta property="og:description" content="{{ page.content | strip_html | xml_escape | truncate: 200 }}"> 
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{ site.url }}{{ page.url }}">
   <meta property="og:image" content="https://lh4.googleusercontent.com/-vQLVz-WbNzI/UtaLgPfo0aI/AAAAAAAAC3M/A1J2kerMSiA/w592-h591-no/dwarak.jpg">
@@ -62,8 +62,8 @@
  
 
   <!-- Schema.org for Google Plus -->
-  <meta itemprop="name" content="Dwarak's Blog">
-  <meta itemprop="description" content="{{ page.title }}">
+  <meta itemprop="name" content="{{ page.title }}">
+  <meta itemprop="description" content="{{ page.content | strip_html | xml_escape | truncate: 200 }}">
   <meta itemprop="image" content="https://lh4.googleusercontent.com/-vQLVz-WbNzI/UtaLgPfo0aI/AAAAAAAAC3M/A1J2kerMSiA/w592-h591-no/dwarak.jpg"> 
 
 
