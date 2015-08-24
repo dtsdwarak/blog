@@ -44,10 +44,22 @@
   <!-- Twitter Cards -->
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@dtsdwarak">
-  <meta name="twitter:title" content="{{ page.title }}">
-  <meta name="twitter:description" content="Tech, Gossip and Musings from Dwarak's Diary">
   <meta name="twitter:creator" content="@dtsdwarak">
+{% if page.title %}
+  <meta name="twitter:title" content="{{ page.title }}">
+{% else %}
+  <meta name="twitter:title" content="{{ site.title }}">
+{% endif %}
+{% if page.url %}
+  <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
+{% endif %}
+<meta name="twitter:description" content="{{ page.content | strip_html | xml_escape | truncate: 200 }}">
+{% if page.image %}
+  <meta name="twitter:image:src" content="{{ site.url }}/path/to/image/{{ page.image }}">
+{% else %}
   <meta name="twitter:image:src" content="https://lh4.googleusercontent.com/-vQLVz-WbNzI/UtaLgPfo0aI/AAAAAAAAC3M/A1J2kerMSiA/w592-h591-no/dwarak.jpg">
+{% endif %}
+ 
 
   <!-- Schema.org for Google Plus -->
   <meta itemprop="name" content="Dwarak's Blog">

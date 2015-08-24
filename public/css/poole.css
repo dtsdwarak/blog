@@ -336,10 +336,11 @@ tbody tr:nth-child(odd) th {
 .post a {
   /*margin-bottom: 4em;*/
   color: #303030;
-  text-align: justify;
+  /*text-align: justify;*/
 }
 
-.post-content {
+p{
+  text-align: justify;    
 }
 
 .post-content img{
