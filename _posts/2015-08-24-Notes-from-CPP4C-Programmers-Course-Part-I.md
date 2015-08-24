@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Notes from CPP4C Programmers Course
+title: Notes from CPP4C Programmers Course - Part I
 tags: c++,c,programming
 ---
 
@@ -14,6 +14,9 @@ My logical abilities had gotten pretty bad. I should try to improve them. But, b
 Below are my notes, that are not "complete" by any means. But, I point out certain salient features of the language that most of us usually tend to miss. And since this course addresses too many things at once, I am thinking of doing this part by part.
 
 The post is fairly long and I suggest you slap your cheeks to make sure you really get your focus back. Come, let's jump right in! 
+
+* [TypeCasting](#typecasting-in-c)
+* [Static Asserts](#staticasserts-in-c)
 
 ##TypeCasting in C++
 
@@ -205,7 +208,7 @@ It works!
 
 > Can you see that we are trying to typecast a baseclass pointer into a derived class pointer?
 
-But, hang on! Let us try to do just the opposite : **Typecast a derived class pointer to a base class**, and the chugs start to turn.
+But, hang on! Let us try to do just the opposite : **Typecast a derived class pointer to a base class**.
 
 {% highlight cpp %}
 struct A{
@@ -267,3 +270,158 @@ int main(){
 This code would compile OK. But the output is definitely not ```10``` or ```10.<something>```.
 
 How do we handle such problems? There comes ```dynamic_cast``` into picture.
+
+##```dynamic_cast```
+
+Now, before we get to the complex parts of this typecasting technique, let us analyze this from the very basics.
+
+Look at the code below.
+
+{% highlight cpp %}
+int a=2;
+float b=10.78;
+a = dynamic_cast<int>(b);
+
+int a=2;
+float b=10.78;
+b = dynamic_cast<float>(a);
+{% endhighlight %}
+
+Both of the conversions above would be impossible to do with ```dynamic_cast```. 
+
+Now, over to pointer type experiments.
+
+{% highlight cpp %}
+#include <iostream>
+using namespace std;
+
+struct A{
+	float a;
+	virtual ~A(){} // We are making the class A polymorphic.
+};
+
+struct B : public A {
+	int b;
+};
+
+int main(){
+	A *a = new A; // Base pointer for Base object
+	A *b = new B; // Base pointer for Derived object
+	
+	B *c;
+	
+	c = dynamic_cast<B*>(a); //Pointer downcast
+	if(!c)
+	cout<<"\nFailed for Base object to Derived pointer";
+	
+	c = dynamic_cast<B*>(b); //Pointer downcast
+	if(!c)
+	cout<<"\nFailed for Derived object to Derived pointer";
+}
+{% endhighlight %}
+
+Observe the output below.
+
+{% highlight text %}
+$ g++ dynamic_cast.cpp
+$ ./a.out
+Failed for Base object to Derived pointer
+$ 
+{% endhighlight %}
+
+###Conclusion
+
+The thing is here is that, ```dynamic_cast``` compiles even if it is not able to give us the result we want. But, it fails during runtime --> **More safer** than ```static_cast```.
+
+And it allows for pointer downcast of polymorphic classes (*Base class pointer to Derived class pointer*) **only if** the pointed object is a valid object of the target type.
+
+##```static_asserts``` in C++
+
+The ```static_assert``` is used to declare conditions(assertions) without which program compilation simply won't happen. The usage of ```static_assert``` may not be glaringly obvious at the first glance. 
+
+But, we'll try to find out what its for.
+
+The syntax of ```static_assert``` is,
+
+{% highlight cpp %}
+static_assert(constant_expression, error_message)
+{% endhighlight %}
+
+Let's take up a dumb example for starters.
+
+{% highlight cpp %}
+#include <iostream>
+using namespace std;
+
+main(){
+	const int a=10;
+	static_assert(a>10,"Value has to be greater than 10");
+}
+{% endhighlight %}
+
+The output of the program above will be,
+
+{% highlight bash %}
+$ g++ --std=c++11 static_assert.cpp && ./a.out
+static_assert.cpp: In function ‘int main()’:
+static_assert.cpp:6:2: error: static assertion failed: Value has to be greater than 10
+  static_assert(a>10,"Value has to be greater than 10"
+{% endhighlight %}
+
+The same can be used within a ```class``` definition as well.
+
+So, as we can see, we can give custom assert conditions for verification at compile time. But, what good is it if we can only check for ```const``` expressions? When and how do we actually put this to good use?
+
+###Use Case 1: To check your runtime environment
+
+Imagine you have built a C++ codebase that should work only when ```int``` values take up 4 bytes. You can setup an assertion as below.
+
+{% highlight cpp %}
+# include <iostream>
+using namespace std;
+
+static_assert(sizeof(int)==4,"Integer size != 4 bytes");
+
+int main(){
+	int a=10;
+}
+{% endhighlight %}
+
+###Use Case 2: To check up datatypes when you work with templates
+
+Imagine that for some reason, you only want to print integer values. The assertion for same can be provided like this.
+
+{% highlight cpp %}
+#include <iostream>
+#include <type_traits>
+#include <array>
+using namespace std;
+
+template<class T>
+void int_display(T a){
+	static_assert(is_integral<T>::value,"Not an integer value");
+	cout<<a;
+}
+
+int main(){
+	float a=2.33;
+	int b=1;
+	int_display(a);
+	int_display(b);
+}
+{% endhighlight %}
+
+Here, the value is checked with constructs provided by ```type_traits``` header. The output of this example will again be, 
+
+{% highlight bash %}
+$ g++ -std=c++11 template_static_assert.cpp
+template_static_assert.cpp: In instantiation of ‘void int_display(T) [with T = float]’:
+template_static_assert.cpp:15:15:   required from here
+template_static_assert.cpp:8:2: error: static assertion failed: Not an integer value
+  static_assert(is_integral<T>::value,"Not an integer value");
+{% endhighlight %}
+
+These are two use cases that I could think of for ```static_asserts```.
+
+---
+There are many more awesome stuff in the course. But more on that, next time! Let me know if something's not what it should be in the comments section below.
