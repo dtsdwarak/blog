@@ -67,10 +67,9 @@ There are two kinds of hypervisors available -- Type 1 and Type 2.
 Type 1 hypervisors are the kind that act directly on top of the host hardware. Type 2 act on top of host hardware + host operating system. Thus, the examples we looked before are Type 2 hypervisors. [Xen](http://www.xenproject.org/) is an example of Type 1 hypervisor. Pictures below will put things in perspective.
 
 <img src="/assets/images/virtualization/type1.png" style="height:300px">
-<div class="img-caption">Type 1 Hypervisor</div>
-
+<p><div class="img-caption">Type 2 Hypervisor</div></p>
 <img src="/assets/images/virtualization/type2.png" style="height:350px">
-<div class="img-caption">Type 2 Hypervisor</div>
+<p><div class="img-caption">Type 2 Hypervisor</div></p>
 
 ##Open Source Virtualization
 
