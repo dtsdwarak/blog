@@ -36,13 +36,13 @@
 
 /* Prevent scroll on narrow devices */
 
-/* Roboto Font from Google */
-@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+/* Alegreya Font from Google */
+@import url(https://fonts.googleapis.com/css?family=Alegreya);
 
 /* Custom Date Style */
 .date-format{
-  color:#55676A; 
-  font-size:15pt; 
+  color:#55676A;
+  font-size:15pt;
   /*float:left;*/
 }
 
@@ -53,11 +53,11 @@ body {
 }
 
 html {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Alegreya', serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Alegreya', serif;
   font-weight: 400;
   color: #313131;
   letter-spacing: -.025rem;
@@ -160,7 +160,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 14rem;
   visibility: hidden;
   overflow-y: auto;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Alegreya', serif;
   font-size: .875rem; /* 15px */
   color: rgba(255,255,255,.6);
   background-color: #202020;
@@ -380,7 +380,7 @@ a.sidebar-nav-item:focus {
   overflow: hidden; /* clearfix */
   margin-left: -1rem;
   margin-right: -1rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Alegreya', serif;
   color: #ccc;
   text-align: center;
 }
