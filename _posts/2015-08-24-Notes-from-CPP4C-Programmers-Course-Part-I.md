@@ -5,7 +5,7 @@ tags: c++,c,programming
 ---
 
 Not until a few months ago, I had great confidence in my C++ programming skills. Back in school days, I saw no reason to use a compiler to check for errors and I'd pride myself for that. Years went by and one day, long after I had distanced myself from ```#include```, I was trying to solve a simple problem. And I sucked. Sucked bigtime. Sucked so badly, I didn't even know you could declare arrays with variables for size. I was a little taken aback.
-<!--break--> 
+<!--break-->
 
 On top of it was the realization that you could have functions in ```structures```. Shock in my face didn't have words in any language known to man.
 
@@ -13,32 +13,32 @@ My logical abilities had gotten pretty bad. I should try to improve them. But, b
 
 Below are my notes, that are not "complete" by any means. But, I point out certain salient features of the language that most of us usually tend to miss. And since this course addresses too many things at once, I am thinking of doing this part by part.
 
-The post is fairly long and I suggest you slap your cheeks to make sure you really get your focus back. Come, let's jump right in! 
+The post is fairly long and I suggest you slap your cheeks to make sure you really get your focus back. Come, let's jump right in!
 
 * [TypeCasting](#typecasting-in-c)
 * [Static Asserts](#staticasserts-in-c)
 
-##TypeCasting in C++
+## TypeCasting in C++
 
 For the ones who come with a classic C background, your idea of typcasting may have only been like this.
 
-{% highlight cpp %}
+```cpp
 int a = 2;
 float b = (float) a;
-{% endhighlight %}
+```
 
 Apart from the *c-like* syntax as seen above, there is another *functional* typecasting that goes like this.
 
-{% highlight cpp %}
+```cpp
 int a = 2;
 float b = float(a);
-{% endhighlight %}
+```
 
 There is not much difference between either methods. It is totally up to the user to choose his/her preferred way although many would [prefer to use the latter](http://stackoverflow.com/a/3487099).
 
 Sure, it works if you know what you are doing. But the methods above are so powerful that you can typecast literally any type to another type. Consider this example.
 
-{% highlight cpp %}
+```cpp
 //wrong_type_casting.cpp
 #include <iostream>
 
@@ -58,11 +58,11 @@ int main(){
 	B* b = (B*) &a;
 	cout<<b->b;
 }
-{% endhighlight %}
+```
 
 This would perfectly compile to an executable. Only that the output here may be some junk or in somecases, may create some runtime error.
 
-The problem again is the kind of typecasting we perform. C++ allows for more safer methods to implement the same. 
+The problem again is the kind of typecasting we perform. C++ allows for more safer methods to implement the same.
 
 * ```static_cast```
 * ```dynamic_cast```
@@ -71,16 +71,16 @@ The problem again is the kind of typecasting we perform. C++ allows for more saf
 
 The syntax for each of the casts is
 
-{% highlight cpp %}
+```cpp
 type1 variable = anytypeof_cast<type1>(type2 variable);
-{% endhighlight %}
+```
 
-###```reinterpret_cast```
+### ```reinterpret_cast```
 The most dumbass typecast ever. It doesn't check which is pointing to what. You could even typecast an integer pointer to a class pointer that you have defined. It is absolutely dangerous at all levels and its highly recommended that you avoid it.
 
-For example, the same example above can be achieved via ```reinterpret_cast``` as 
+For example, the same example above can be achieved via ```reinterpret_cast``` as
 
-{% highlight cpp %}
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -98,51 +98,51 @@ int main(){
 	A* a = reinterpret_cast<A*>(&b);
 	cout<<a->a;
 }
-{% endhighlight %}
+```
 
-###```static_cast```
+### ```static_cast```
 
 Now, ```static_cast``` is a little better than the ```reinterpret_cast``` in that, it checks during compile time to see if the values in the LHS and the RHS both match to the same value. The same example above would have been impossible with ```static_cast```.
 
 To really understand what and what is not possible with ```static_cast```, let's start with something simple.
 
-{% highlight cpp %}
+```cpp
 float a = 2.34;
 int b = static_cast<int>(a); //int b=a;
 
 int a = 10;
 float b = static_cast<float>(a); //float b=a;
-{% endhighlight %}
+```
 
 The above code would be possible with ```static_cast```. In general, ```static_cast``` allows for conversions that can happen implicitly.
 
-Now consider the code below. 
+Now consider the code below.
 
-{% highlight cpp %}
+```cpp
 float *a = new float(2.34);
 int* b = (int*)a;
 
 int* a = new int(10);
 float* b = (float*)a;
-{% endhighlight %}
+```
 
 We have changed nothing except that we declare the variables dynamically. The above code would compile and execute. But the output would not be what we expect. Implementing the same with ```static_cast``` would not let us compile the code at all.
 
-{% highlight cpp %}
+```cpp
 float *a = new float(2.34);
 int* b = static_cast<int*>(a);
 
 int* a = new int(10);
 float* b = static_cast<float*>(a);
-{% endhighlight %}
+```
 
-This code above does not get compiled at all, thus throwing an error. 
+This code above does not get compiled at all, thus throwing an error.
 
 From what we observe, the problem is with pointer conversion. One type of pointer cannot be converted to another type. But, don't bury that thought deep down. Let's explore a little more before we jump into making any conclusion.
 
 Again, consider the following code.
 
-{% highlight cpp %}
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -158,11 +158,11 @@ int main(){
 	A* a = new A;
 	B* b = (B*)a;
 }
-{% endhighlight %}
+```
 
 Though totally senseless, this would compile perfectly in C++. Let's attempt the same with ```static_cast```.
 
-{%highlight cpp %}
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -178,18 +178,18 @@ int main(){
 	A* a = new A;
 	B* b = static_cast<B*>(a);
 }
-{% endhighlight %}
+```
 
 This code throws an error.
 
-{% highlight bash %}
+```
 static_cast.cpp:14:26: error: invalid static_cast from type ‘A*’ to type ‘B*’
   B* b = static_cast<B*>(a);
-{% endhighlight %}
+```
 
 Let's change it a bit making ```B``` a derivative of class ```A```.
 
-{% highlight cpp %}
+```cpp
 struct A{
 	float a;
 };
@@ -202,7 +202,7 @@ int main(){
 	A* a = new A;
 	B* b = static_cast<B*>(a);
 }
-{% endhighlight %}
+```
 
 It works!
 
@@ -210,7 +210,7 @@ It works!
 
 But, hang on! Let us try to do just the opposite : **Typecast a derived class pointer to a base class**.
 
-{% highlight cpp %}
+```cpp
 struct A{
 	float a;
 };
@@ -223,7 +223,7 @@ int main(){
 	B* b = new B;
 	A* a = static_cast<A*>(b);
 }
-{% endhighlight %}
+```
 
 Works again!
 
@@ -231,11 +231,11 @@ What it means is that ```static_cast``` for pointers works only if the destinati
 
 Thus, ```static_cast``` can perform both pointer upcasts (*pointer-to-base from pointer-to-derived*) and downcasts (*pointer-to-derived from pointer-to-base*).
 
-###Conclusion
+### Conclusion
 
 The conclusion we derive with regard to the ```static_cast``` is that:
 
-* **Non pointer typecast**: ```static_cast``` allows for any kind of implicit conversion. 
+* **Non pointer typecast**: ```static_cast``` allows for any kind of implicit conversion.
 
 > **Remember** - For user defined classes, the source and destination datatypes must have a relationship to be able to perform an implicit conversion.
 
@@ -247,7 +247,7 @@ Although this seems better than ```reinterpret_cast```, the problem with ```stat
 
 Consider the code below.
 
-{% highlight cpp %}
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -265,19 +265,19 @@ int main(){
 	A* a = static_cast<A*>(b);
 	cout<<a->a;
 }
-{% endhighlight %}
+```
 
 This code would compile OK. But the output is definitely not ```10``` or ```10.<something>```.
 
 How do we handle such problems? There comes ```dynamic_cast``` into picture.
 
-##```dynamic_cast```
+## ```dynamic_cast```
 
 Now, before we get to the complex parts of this typecasting technique, let us analyze this from the very basics.
 
 Look at the code below.
 
-{% highlight cpp %}
+```cpp
 int a=2;
 float b=10.78;
 a = dynamic_cast<int>(b);
@@ -285,13 +285,13 @@ a = dynamic_cast<int>(b);
 int a=2;
 float b=10.78;
 b = dynamic_cast<float>(a);
-{% endhighlight %}
+```
 
-Both of the conversions above would be impossible to do with ```dynamic_cast```. 
+Both of the conversions above would be impossible to do with ```dynamic_cast```.
 
 Now, over to pointer type experiments.
 
-{% highlight cpp %}
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -307,49 +307,49 @@ struct B : public A {
 int main(){
 	A *a = new A; // Base pointer for Base object
 	A *b = new B; // Base pointer for Derived object
-	
+
 	B *c;
-	
+
 	c = dynamic_cast<B*>(a); //Pointer downcast
 	if(!c)
 	cout<<"\nFailed for Base object to Derived pointer";
-	
+
 	c = dynamic_cast<B*>(b); //Pointer downcast
 	if(!c)
 	cout<<"\nFailed for Derived object to Derived pointer";
 }
-{% endhighlight %}
+```
 
 Observe the output below.
 
-{% highlight text %}
+```
 $ g++ dynamic_cast.cpp
 $ ./a.out
 Failed for Base object to Derived pointer
-$ 
-{% endhighlight %}
+$
+```
 
-###Conclusion
+### Conclusion
 
 The thing is here is that, ```dynamic_cast``` compiles even if it is not able to give us the result we want. But, it fails during runtime --> **More safer** than ```static_cast```.
 
 And it allows for pointer downcast of polymorphic classes (*Base class pointer to Derived class pointer*) **only if** the pointed object is a valid object of the target type.
 
-##```static_asserts``` in C++
+## ```static_asserts``` in C++
 
-The ```static_assert``` is used to declare conditions(assertions) without which program compilation simply won't happen. The usage of ```static_assert``` may not be glaringly obvious at the first glance. 
+The ```static_assert``` is used to declare conditions(assertions) without which program compilation simply won't happen. The usage of ```static_assert``` may not be glaringly obvious at the first glance.
 
 But, we'll try to find out what its for.
 
 The syntax of ```static_assert``` is,
 
-{% highlight cpp %}
+```cpp
 static_assert(constant_expression, error_message)
-{% endhighlight %}
+```
 
 Let's take up a dumb example for starters.
 
-{% highlight cpp %}
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -357,26 +357,26 @@ main(){
 	const int a=10;
 	static_assert(a>10,"Value has to be greater than 10");
 }
-{% endhighlight %}
+```
 
 The output of the program above will be,
 
-{% highlight bash %}
+```
 $ g++ --std=c++11 static_assert.cpp && ./a.out
 static_assert.cpp: In function ‘int main()’:
 static_assert.cpp:6:2: error: static assertion failed: Value has to be greater than 10
   static_assert(a>10,"Value has to be greater than 10"
-{% endhighlight %}
+```
 
 The same can be used within a ```class``` definition as well.
 
 So, as we can see, we can give custom assert conditions for verification at compile time. But, what good is it if we can only check for ```const``` expressions? When and how do we actually put this to good use?
 
-###Use Case 1: To check your runtime environment
+### Use Case 1: To check your runtime environment
 
 Imagine you have built a C++ codebase that should work only when ```int``` values take up 4 bytes. You can setup an assertion as below.
 
-{% highlight cpp %}
+```cpp
 # include <iostream>
 using namespace std;
 
@@ -385,13 +385,13 @@ static_assert(sizeof(int)==4,"Integer size != 4 bytes");
 int main(){
 	int a=10;
 }
-{% endhighlight %}
+```
 
-###Use Case 2: To check up datatypes when you work with templates
+### Use Case 2: To check up datatypes when you work with templates
 
 Imagine that for some reason, you only want to print integer values. The assertion for same can be provided like this.
 
-{% highlight cpp %}
+```cpp
 #include <iostream>
 #include <type_traits>
 #include <array>
@@ -409,17 +409,17 @@ int main(){
 	int_display(a);
 	int_display(b);
 }
-{% endhighlight %}
+```
 
-Here, the value is checked with constructs provided by ```type_traits``` header. The output of this example will again be, 
+Here, the value is checked with constructs provided by ```type_traits``` header. The output of this example will again be,
 
-{% highlight bash %}
+```
 $ g++ -std=c++11 template_static_assert.cpp
 template_static_assert.cpp: In instantiation of ‘void int_display(T) [with T = float]’:
 template_static_assert.cpp:15:15:   required from here
 template_static_assert.cpp:8:2: error: static assertion failed: Not an integer value
   static_assert(is_integral<T>::value,"Not an integer value");
-{% endhighlight %}
+```
 
 These are two use cases that I could think of for ```static_asserts```.
 

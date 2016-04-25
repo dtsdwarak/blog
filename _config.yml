@@ -1,8 +1,14 @@
 # Permalinks
-#
-# Use of `relative_permalinks` ensures post links from the index work properly.
 permalink:           pretty
-relative_permalinks: true
+future: true
+
+# Markdown syntax
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  line_numbers: true
 
 # Setup
 title:               Dwarak
@@ -21,6 +27,9 @@ author:
 
 # Custom vars
 version:             1.0.1
+
+# paginate
+gems: [jekyll-paginate]
 
 # Enforce SSL
 enforce_ssl: blog.dwarak.in
