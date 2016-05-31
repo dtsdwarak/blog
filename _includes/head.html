@@ -18,12 +18,6 @@
     redirect users to the https version of the website.
     but: only check when on the production domain, as set in _config.yml.
    -->
-  <script type="text/javascript">
-    var enforce = "{{ site.enforce_ssl }}";
-    if ((enforce == window.location.host) && (window.location.protocol != "https:"))
-      window.location = window.location.toString().replace(/^http:/, "https:");
-  </script>
-
   {% endif %}
 
 <!-- Search Headers -->
@@ -33,8 +27,8 @@
   <!-- Search Headers End -->
 
   <!-- Facebook Headers-->
-  <meta property="og:title" content="{{ page.title }}"> 
-  <meta property="og:description" content="{{ page.content | strip_html | xml_escape | truncate: 200 }}"> 
+  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:description" content="{{ page.content | strip_html | xml_escape | truncate: 200 }}">
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{ site.url }}{{ page.url }}">
   <meta property="og:image" content="https://lh4.googleusercontent.com/-vQLVz-WbNzI/UtaLgPfo0aI/AAAAAAAAC3M/A1J2kerMSiA/w592-h591-no/dwarak.jpg">
@@ -59,12 +53,12 @@
 {% else %}
   <meta name="twitter:image:src" content="https://lh4.googleusercontent.com/-vQLVz-WbNzI/UtaLgPfo0aI/AAAAAAAAC3M/A1J2kerMSiA/w592-h591-no/dwarak.jpg">
 {% endif %}
- 
+
 
   <!-- Schema.org for Google Plus -->
   <meta itemprop="name" content="{{ page.title }}">
   <meta itemprop="description" content="{{ page.content | strip_html | xml_escape | truncate: 200 }}">
-  <meta itemprop="image" content="https://lh4.googleusercontent.com/-vQLVz-WbNzI/UtaLgPfo0aI/AAAAAAAAC3M/A1J2kerMSiA/w592-h591-no/dwarak.jpg"> 
+  <meta itemprop="image" content="https://lh4.googleusercontent.com/-vQLVz-WbNzI/UtaLgPfo0aI/AAAAAAAAC3M/A1J2kerMSiA/w592-h591-no/dwarak.jpg">
 
 
   <!-- CSS -->
@@ -77,5 +71,5 @@
 
   <!-- RSS -->
   <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
-  
+
 </head>
