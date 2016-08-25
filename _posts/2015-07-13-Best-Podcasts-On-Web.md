@@ -42,3 +42,15 @@ This podcast is totally geeky inside-out and may not arouse interest with new ki
 ![Hak5]({{site.baseurl}}/assets/images/turing-incomplete.png)
 
 I've just started following this podcast. So far so good. But, I cannot comment on that, just yet.
+
+# UPDATE:
+
+Here's a [list of all the podcasts](https://gpodder.net/user/dtsdwarak/subscriptions) I listen to, on a regular basis.
+
+And [Turing InComplete](#turing-incompletehttpturingcool) has been an amazing podcast. Though not frequent, it has been very informative.
+
+## [Software Engineering Daily](http://softwareengineeringdaily.com/)
+
+![Hak5]({{site.baseurl}}/assets/images/SED.png)
+
+A daily audio podcast where people from a range of domains are interviewed. A1 stuff for all the curious minds.
