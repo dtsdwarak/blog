@@ -63,6 +63,20 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: -.025rem;
 }
 
+.post-date-heading {
+  font-size: 75%;
+  font-weight: lighter;
+  color: #9a9a9a;
+  float: right;
+  margin-right: 15%;
+}
+
+@media (max-width: 56em) {
+  .post-date-heading {
+    display: none;
+  }
+}
+
 
 /*
  * Wrapper

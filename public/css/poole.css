@@ -339,6 +339,10 @@ tbody tr:nth-child(odd) th {
   /*text-align: justify;*/
 }
 
+.post a:hover{
+  color: #268bd2;
+}
+
 p{
   text-align: justify;
 }
