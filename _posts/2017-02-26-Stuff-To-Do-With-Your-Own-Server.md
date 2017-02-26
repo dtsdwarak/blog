@@ -10,7 +10,7 @@ Here is a sample of what you can do with it and along the way I would also show 
 
 ## Run Linux
 
-Operating System is a purely individual choice. Personally, I'd prefer a headless debian based distro - for its ease of use and package availability. Before you start setting up, I'd strongly encourage you run a BIOS memory check and a disk check. We don't know how these devices would perform under load and ensuring hardware health is a good option. Replace components if necessary - better than getting a new device altogether.
+Operating System is a purely individual choice. Personally, I'd prefer a headless debian based distro - for its ease of use and package availability. Before you start setting up, I'd strongly encourage you run a BIOS memory check and a disk check. We don't know how these devices would perform under load and ensuring hardware health is a good option. Replace components if necessary - better than getting a new device altogether. Also consider a battery check if you run a laptop.
 
 ## Essentials
 
@@ -67,7 +67,7 @@ To host DNS, I'd strongly suggest [Cloudflare](https://www.cloudflare.com/). It 
 Here's the script to do that. You may edit this to your need.
 <script src="https://gist.github.com/dtsdwarak/19abfd5d1ae18c4cd929d082b9d207fc.js"></script>
 
-Create a cron job to update it periodically. I've set up to do that every 15 minutes. It updates my [NextCloud server](https://drive.dwarak.in/index.php/login) and [Laptop's monitoring stack](https://hcl.dwarak.in/) DNS.
+Create a cron job to update it periodically. I've set up to do that every 3 minutes. It updates my [NextCloud server](https://drive.dwarak.in/index.php/login) and [Laptop's monitoring stack](https://hcl.dwarak.in/) DNS. Cloudflare's API limit is [1200 calls for 5 minutes](https://support.cloudflare.com/hc/en-us/articles/200171456-How-many-API-calls-can-I-make-).
 
 ## More inspiration
 
