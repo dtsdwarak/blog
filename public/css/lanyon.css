@@ -130,6 +130,15 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0;
   color: #505050;
 }
+.masthead-right {
+  float:right;
+}
+
+.masthead-right:hover{
+  color: #c0c0c0;
+  cursor: pointer;
+}
+
 .masthead-title a {
   color: #505050;
 }
