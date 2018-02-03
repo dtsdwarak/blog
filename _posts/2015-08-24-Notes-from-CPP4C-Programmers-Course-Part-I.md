@@ -18,7 +18,7 @@ The post is fairly long and I suggest you slap your cheeks to make sure you real
 * [TypeCasting](#typecasting-in-c)
 * [Static Asserts](#staticasserts-in-c)
 
-## TypeCasting in C++
+### TypeCasting in C++
 
 For the ones who come with a classic C background, your idea of typcasting may have only been like this.
 
@@ -75,7 +75,7 @@ The syntax for each of the casts is
 type1 variable = anytypeof_cast<type1>(type2 variable);
 ```
 
-### ```reinterpret_cast```
+#### ```reinterpret_cast```
 The most dumbass typecast ever. It doesn't check which is pointing to what. You could even typecast an integer pointer to a class pointer that you have defined. It is absolutely dangerous at all levels and its highly recommended that you avoid it.
 
 For example, the same example above can be achieved via ```reinterpret_cast``` as
@@ -100,7 +100,7 @@ int main(){
 }
 ```
 
-### ```static_cast```
+#### ```static_cast```
 
 Now, ```static_cast``` is a little better than the ```reinterpret_cast``` in that, it checks during compile time to see if the values in the LHS and the RHS both match to the same value. The same example above would have been impossible with ```static_cast```.
 
@@ -231,7 +231,7 @@ What it means is that ```static_cast``` for pointers works only if the destinati
 
 Thus, ```static_cast``` can perform both pointer upcasts (*pointer-to-base from pointer-to-derived*) and downcasts (*pointer-to-derived from pointer-to-base*).
 
-### Conclusion
+#### Conclusion
 
 The conclusion we derive with regard to the ```static_cast``` is that:
 
@@ -241,7 +241,7 @@ The conclusion we derive with regard to the ```static_cast``` is that:
 
 * **Ponter typecasts**: The source and destination pointers should have a relationship.
 
-### Problem with ```static_cast```
+#### Problem with ```static_cast```
 
 Although this seems better than ```reinterpret_cast```, the problem with ```static_cast``` is that it does not check if the object being converted is a "complete" object of the destination type. It is [solely the responsibility of the programmer](http://www.cplusplus.com/doc/tutorial/typecasting/#static_cast "Reference from CPlusPlus.com") to make sure that the conversion is safe.
 
@@ -271,7 +271,7 @@ This code would compile OK. But the output is definitely not ```10``` or ```10.<
 
 How do we handle such problems? There comes ```dynamic_cast``` into picture.
 
-## ```dynamic_cast```
+### ```dynamic_cast```
 
 Now, before we get to the complex parts of this typecasting technique, let us analyze this from the very basics.
 
@@ -329,13 +329,13 @@ Failed for Base object to Derived pointer
 $
 ```
 
-### Conclusion
+#### Conclusion
 
 The thing is here is that, ```dynamic_cast``` compiles even if it is not able to give us the result we want. But, it fails during runtime --> **More safer** than ```static_cast```.
 
 And it allows for pointer downcast of polymorphic classes (*Base class pointer to Derived class pointer*) **only if** the pointed object is a valid object of the target type.
 
-## ```static_asserts``` in C++
+### ```static_asserts``` in C++
 
 The ```static_assert``` is used to declare conditions(assertions) without which program compilation simply won't happen. The usage of ```static_assert``` may not be glaringly obvious at the first glance.
 
@@ -372,7 +372,7 @@ The same can be used within a ```class``` definition as well.
 
 So, as we can see, we can give custom assert conditions for verification at compile time. But, what good is it if we can only check for ```const``` expressions? When and how do we actually put this to good use?
 
-### Use Case 1: To check your runtime environment
+#### Use Case 1: To check your runtime environment
 
 Imagine you have built a C++ codebase that should work only when ```int``` values take up 4 bytes. You can setup an assertion as below.
 
@@ -387,7 +387,7 @@ int main(){
 }
 ```
 
-### Use Case 2: To check up datatypes when you work with templates
+#### Use Case 2: To check up datatypes when you work with templates
 
 Imagine that for some reason, you only want to print integer values. The assertion for same can be provided like this.
 

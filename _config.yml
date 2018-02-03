@@ -1,31 +1,24 @@
+# Jekyll configuration
+
+name: Dwarak
+description: Code. Life. Fun.
+
+# url is currently only used only for the RSS feed in feed.xml
+url:  https://blog.dwarak.in
+
+# baseurl will often be '', but for a project page on gh-pages, it needs to
+# be the project name.
+# *** IMPORTANT: If your local "jekyll serve" throws errors change this to '' or
+#     run it like so: jekyll serve --baseurl=''
+baseurl: ''
+paginate: 3
+
 # Permalinks
-permalink:           pretty
+permalink: pretty
 future: true
 
-# Markdown syntax
+highlighter: rouge
 markdown: kramdown
+plugins: ['jekyll-paginate']
 
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
-  line_numbers: true
-
-# Setup
-title:               Dwarak
-tagline:             'Code. Life. Fun.'
-description:         'is a i-really-want-to-be-a-guitarist guy. Loves Gadgets, geeks and girls. Is an engineer by profession and blogger by passion.'
-url:                 https://blog.dwarak.in
-baseurl:             ''
-timezone:            'Asia/Kolkata'
-
-# About/contact
-author:
-  name:              Dwaraka Nath
-  url:               https://twitter.com/dtsdwarak
-  email:             me@dwarak.in
-
-# Custom vars
-version:             1.0.1
-
-# Enforce SSL
-enforce_ssl: blog.dwarak.in
+exclude: ['README.md', 'LICENSE']

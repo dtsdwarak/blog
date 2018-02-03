@@ -8,11 +8,11 @@ These days, we find a lot of computing devices unused - at home and at office. T
 
 Here is a sample of what you can do with it and along the way I would also show you what I did with my old HCL laptop that was lying dormant for more than a couple of years. The same can be replicated with a Raspberry Pi too.
 
-## Run Linux
+### Run Linux
 
 Operating System is a purely individual choice. Personally, I'd prefer a headless debian based distro - for its ease of use and package availability. Before you start setting up, I'd strongly encourage you run a BIOS memory check and a disk check. We don't know how these devices would perform under load and ensuring hardware health is a good option. Replace components if necessary - better than getting a new device altogether. Also consider a battery check if you run a laptop.
 
-## Essentials
+### Essentials
 
 A list of essentials (or rather what I did) that your server has to run.
 
@@ -23,7 +23,7 @@ My laptop's RAM got damaged last summer and I couldn't get a compatible replacem
   * [Secure your server with LetsEncrypt](https://www.digitalocean.com/community/tutorials/how-to-secure-apache-with-let-s-encrypt-on-ubuntu-14-04). Make sure you setup a cron to auto renew every 3 months. (***Details included in the blog post link.***)
 * [Plex Media server](https://www.plex.tv/) - your home Media Center.
 
-## Monitoring
+### Monitoring
 
 One thing that is an absolute necessity is a monitoring stack. When you run things yourself, remember - anything can go wrong anywhere. Tracing your errors and monitoring your device's health is paramount. [net-data](https://github.com/firehol/netdata) is an excellent choice. But, if you'd like to have an option, you can consider [linux-dash](https://github.com/afaqurk/linux-dash) too.
 
@@ -34,7 +34,7 @@ One thing that is an absolute necessity is a monitoring stack. When you run thin
 Here's the monitoring dashboard for my laptop.
 <img src="/assets/images/own-server/hcl-monitor.png" style="height:450px;">
 
-## Optional Stuff
+### Optional Stuff
 
 Few things I'd like to have. But not that important.
 
@@ -50,7 +50,7 @@ Few things I'd like to have. But not that important.
 * [Turtl Notes](https://turtlapp.com/docs/server/)
 * Kubernetes cluster
 
-## Domain DNS hosting
+### Domain DNS hosting
 
 You may not want to expose your media server and your private blogs to public internet. But, for pretty much anything else you will have to do it - for daily usage. Almost every router today comes with the ability to port forward.
 
@@ -58,7 +58,7 @@ If you have a static IP address, you are all set. With port forwarding setup, yo
 
 If you want to mask it behind a domain name, you can get a domain for cheap rates at [CrazyDomains.in](https://www.crazydomains.in/). But again, that's a personal choice.
 
-## Dynamic DNS with Cloudflare
+### Dynamic DNS with Cloudflare
 
 If you don't have a static IP though, you need to get a domain.
 
@@ -69,7 +69,7 @@ Here's the script to do that. You may edit this to your need.
 
 Create a cron job to update it periodically. I've set up to do that every 3 minutes. It updates my [NextCloud server](https://drive.dwarak.in/index.php/login) and [Laptop's monitoring stack](https://hcl.dwarak.in/) DNS. Cloudflare's API limit is [1200 calls for 5 minutes](https://support.cloudflare.com/hc/en-us/articles/200171456-How-many-API-calls-can-I-make-).
 
-## More inspiration
+### More inspiration
 
 If you have the power and urge to do more with your server(s), here are some inspirations.
 

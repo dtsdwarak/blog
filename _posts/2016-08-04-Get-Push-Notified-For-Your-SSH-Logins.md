@@ -9,16 +9,16 @@ Those of you who have/provide ```ssh``` access to your instances - bare metal or
 Here we'll look into implementing a simple and zero-effort notification service for SSH logins via [PushBullet](https://www.pushbullet.com/).
 <!--break-->
 
-## Basics
+### Basics
 
 For the ones who aren't quite familiar with PushBullet, it is meant to provide a easy way to integrate your apps and services to deliver push notifications across all your devices -  Browsers and Mobile devices via REST APIs. Though the primary intent is only that, over the years it has become much more than that - mirroring device notifications, sharing files across devices and the like.
 
-## Plan
+### Plan
 
 Our idea is simple - call the API through the shell to push notifications. There seemed like two ways to do the same. One is creating a channel - which supposedly can be subscribed by many people. Frankly, I haven't tried to do that, yet. Looks like it is good for teams. The other is, very straightforward - creating an APP by creating an ```ACCESS_TOKEN``` and subsequently using that token to send notifications.
 We'll try the simpler second option.
 
-### Assumptions
+#### Assumptions
 
 I'm assuming that you,
 
@@ -27,9 +27,9 @@ I'm assuming that you,
 * Use a ```*nix``` based machine.
 * Have ```zsh``` shell. ```bash``` is similar for the purpose of this exercise - with just variations in config files.
 
-## Steps
+### Steps
 
-### Writing the PushBullet function
+#### Writing the PushBullet function
 
 First step will be to write the function to call the PushBullet API, which your shell will invoke to push the data. You want it to be 'shell-agnostic'. So, let's put it up in a file and source it from the shell config. Let's assume the file's name is ```shell.rc```.
 
@@ -56,7 +56,7 @@ Here's an example.
 
 ![ssh-alert]({{site.baseurl}}/assets/images/ssh-push-notifications/ssh-alert.png)
 
-### Generating the SSH connection metadata
+#### Generating the SSH connection metadata
 
 Now that we have the function to do what we want, how do we generate the data for us to pass into the function? For clarity, I'm talking about the finding the time, IP address, port and all the other details you may want.
 
@@ -73,7 +73,7 @@ Here, ```$SSH_CONNECTION``` gives all the data you need to gather about the curr
 
 Now that you have the snippet, where would you put this? This again would have to be shell-agnostic. So, let's put that in a file called ```login.rc```.
 
-### Configuring your shell
+#### Configuring your shell
 
 That's it. We have the function and the script to pass data to it.
 
@@ -107,6 +107,6 @@ That is, assuming you have both ```shell.rc``` and ```login.rc``` within ```~/do
 
 And kaboom! Now you have a working PushBullet notification system for your SSH logins.
 
-## My Dotfiles
+### My Dotfiles
 
 For a working copy of the same and much more features, clone my [dotfiles](https://github.com/dtsdwarak/dotfiles) repo. PRs most welcome! <3
