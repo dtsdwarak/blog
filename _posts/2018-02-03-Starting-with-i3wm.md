@@ -22,6 +22,7 @@ Below are some short-cuts that can be used wih ```i3wm``` - more like notes from
 8. Move around workspaces - ```Mod + <workspace_Number>```
 9. Move windows between workspaces - ```Mod + Shift + <workspace_Number>```
 10. Run dialog - ```Mod + D```
+11. Quit ```i3``` / Logout - ```Mod + Shift + E```
 
 ---
 
