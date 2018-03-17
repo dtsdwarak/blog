@@ -18,7 +18,7 @@ Despite some bad experiences, 2016 has been a beautiful year - for having realiz
 
 ### Update - March 17, 2018
 
-Over two years, I was able to take up very little in book reading but did manage to collect more books. Not sure if I feel happy or sad at this moment. Nonetheless, I managed to collect more book lists. Some of them super-awesome in terms of content.
+Over two years, I was able to take up very little in book reading. Not sure if I feel happy or sad at this moment. Nonetheless, I managed to collect more book lists. Some of them with some really great content.
 
 1. [Lobsters' thread on 2017's best books](https://lobste.rs/s/i9s39q/best_books_you_have_read_2017). If you find it tedious to go over, a compilation of the same in my blog [here](/2018/01/01/Best-Books-Of-2017/).
 2. [100 best Nonfiction books of all time](https://www.theguardian.com/books/2017/dec/31/the-100-best-nonfiction-books-of-all-time-the-full-list)
