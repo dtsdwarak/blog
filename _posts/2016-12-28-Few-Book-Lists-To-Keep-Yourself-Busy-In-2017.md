@@ -23,4 +23,4 @@ Over two years, I was able to take up very little in book reading but did manage
 1. [Lobsters' thread on 2017's best books](https://lobste.rs/s/i9s39q/best_books_you_have_read_2017). If you find it tedious to go over, a compilation of the same in my blog [here](/2018/01/01/Best-Books-Of-2017/).
 2. [100 best Nonfiction books of all time](https://www.theguardian.com/books/2017/dec/31/the-100-best-nonfiction-books-of-all-time-the-full-list)
 3. [30 Self-Help Books That Permanently Changed My Life](https://www.xojane.com/newagey/30-self-help-books-that-permanently-changed-my-life)
-4. [Derek Siver's book list](https://sivers.org/book) - Really recommend going over this list if you haven't already. Accompanied by book notes, books in his list will really give get your mind thinking and contemplating on a wide variety of issues.
+4. [Derek Siver's book list](https://sivers.org/book) - Really recommend going over this list if you haven't already. Accompanied by book notes, books in his list will help your mind see a new spectrum of things.
