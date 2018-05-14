@@ -75,5 +75,6 @@ If you have the power and urge to do more with your server(s), here are some ins
 
 * [manor.space](http://manor.space/)
 * [A list of self-hosted things](https://github.com/Kickball/awesome-selfhosted)
+* [Lobsters thread on self-hosted items](https://lobste.rs/s/yxswhm/what_are_you_self_hosting)
 
 Let me know what you've done with yours!
