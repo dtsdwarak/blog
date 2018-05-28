@@ -13,12 +13,19 @@ url:  https://blog.dwarak.in
 baseurl: ''
 paginate: 3
 
-# Permalinks
-permalink: pretty
-future: true
-
 highlighter: rouge
 markdown: kramdown
 plugins: ['jekyll-paginate']
+
+# Jekyll collections
+# Documentation - https://jekyllrb.com/docs/collections/
+collections_dir: collections
+collections:
+  books:
+    output: true
+    permalink: /:collection/:title
+  posts:
+    output: true
+    permalink: /:year/:month/:day/:title/
 
 exclude: ['README.md', 'LICENSE']
