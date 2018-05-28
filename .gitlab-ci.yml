@@ -1,0 +1,27 @@
+image: ruby:2.4.2
+
+test:
+  stage: test
+  script:
+  - bundle install
+  - bundle update
+  - gem install jekyll -v 3.7.3
+  - jekyll build -d test
+  artifacts:
+    paths:
+    - test
+  except:
+  - master
+
+pages:
+  stage: deploy
+  script:
+  - bundle install
+  - bundle update
+  - gem install jekyll -v 3.7.3
+  - jekyll build -d public
+  artifacts:
+    paths:
+    - public
+  only:
+  - master
