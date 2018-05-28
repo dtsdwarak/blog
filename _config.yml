@@ -23,7 +23,7 @@ collections_dir: collections
 collections:
   books:
     output: true
-    permalink: /:collection/:title
+    permalink: /:collection/:title/
   posts:
     output: true
     permalink: /:year/:month/:day/:title/
