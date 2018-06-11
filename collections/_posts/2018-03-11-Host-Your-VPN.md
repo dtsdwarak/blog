@@ -12,3 +12,7 @@ As a continuation of the earlier post on [Stuff To Do With Your Own Server](/201
 
 ### To do
 The thing to note is that, if you run a nextcloud instance as a snap as mentioned in the blog post given above, you may not be able to host multiple services running in port 80 in the same box. If you want that to happen, you should run the nextcloud snap at a different port and use nginx as a reverse proxy (in its true sense).
+
+#### Update
+
+What more can be done? Try my [previous post](/2017/02/26/Stuff-To-Do-With-Your-Own-Server/#optional-stuff).
