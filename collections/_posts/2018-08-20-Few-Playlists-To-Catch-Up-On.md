@@ -24,7 +24,7 @@ More relevant material can be found at [teachyourselfcs.com](https://teachyourse
 
 ## Economics/History
 
-1. [Contemporary Themes in India’s Economy by Dr Arvind Subramanian](https://www.youtube.com/playlist?list=PL0x7Tsixz0flbu4qaVnulcOJ3zhlEFP6E)
+1. [Contemporary Themes in India’s Economy by Dr Arvind Subramanian](https://www.youtube.com/playlist?list=PL0x7Tsixz0flbu4qaVnulcOJ3zhlEFP6E) -- [Course Page](http://www.iitd.ac.in/CEAIITD/index.html).
 2. [Pradhanmantri: Season 1](https://www.youtube.com/playlist?list=ELYR5txmTpa_c)
 
 ---
