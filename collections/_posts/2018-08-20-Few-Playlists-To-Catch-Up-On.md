@@ -6,7 +6,7 @@ tags: video, lecture, series, playlist
 
 Over time I had aggregated a bunch of YouTube playlists that I wanted to follow up on.
 
-## CS
+## CS/Math
 
 1. [Spring 2015 -- Computer Architecture Lectures -- Carnegie Mellon](https://www.youtube.com/playlist?list=PL5PHm2jkkXmi5CxxI7b3JCL1TWybTDtKq)
 2. [15-721 Advanced Database Systems (Spring 2017)](https://www.youtube.com/playlist?list=PLSE8ODhjZXjYgTIlqf4Dy9KQpQ7kn1Tl0)
@@ -14,6 +14,7 @@ Over time I had aggregated a bunch of YouTube playlists that I wanted to follow 
 4. [ops-class.org 2017 Lectures - Operating Systems](https://www.youtube.com/playlist?list=PLE6LEE8y2Jp_z8pkiuvHo7Vz-eQEKsk-I)
 5. [15-721 Advanced Database Systems (Spring 2016)](https://www.youtube.com/playlist?list=PLSE8ODhjZXjbisIGOepfnlbfxeH7TW-8O)
 6. [MIT 6.006 Introduction to Algorithms, Fall 2011](https://www.youtube.com/playlist?list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb)
+7. [Essence of calculus](https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr)
 
 More relevant material can be found at [teachyourselfcs.com](https://teachyourselfcs.com).
 
