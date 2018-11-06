@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Few YouTube playlists to catch up on
+title: Few YouTube playlists to catch up with
 tags: video, lecture, series, playlist
 ---
 
