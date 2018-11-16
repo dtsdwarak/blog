@@ -5,7 +5,7 @@ test:
   script:
   - bundle install
   - bundle update
-  - gem install jekyll -v 3.7.3
+  - gem install jekyll -v 3.8.5
   - jekyll build -d test
   artifacts:
     paths:
@@ -18,7 +18,7 @@ pages:
   script:
   - bundle install
   - bundle update
-  - gem install jekyll -v 3.7.3
+  - gem install jekyll -v 3.8.5
   - jekyll build -d public
   artifacts:
     paths:
