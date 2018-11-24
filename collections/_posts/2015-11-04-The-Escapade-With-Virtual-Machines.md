@@ -15,7 +15,7 @@ I guess by now you have an idea, perhaps vaguely atleast, about virtualization a
 
 Well, that is exactly what emulation does right? If not, then what is emulation and what is virtualization? How do these two differ?
 
-<img src="/assets/images/virtualization/confusion.png" style="height:300px">
+<img src="/assets/images/virtualization/confusion.png">
 
 ### Emulation vs Virtualization
 

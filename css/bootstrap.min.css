@@ -30,7 +30,9 @@ h1 {
 	font-size: 2em
 }
 img {
-	border: 0
+	border: 0;
+  height: 100%;
+  width: 100%;
 }
 hr {
 	height: 0;
