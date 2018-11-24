@@ -9,6 +9,12 @@
           <div class="article">
             <div class="well">
                 <h1><a href="{{ site.baseurl}}{{ page.url }}">{{ page.date | date: "%b %-d, %Y" }} - {{ page.title }}</a></h1>
+                <h5 style="inline">
+                {% for tags in page.tags %}
+                  <a href="#">#{{ tags }}</a>
+                {% endfor %}
+              </h5>
+              <hr/>
             <div class="post-content">
             {{ content }}
             </div>

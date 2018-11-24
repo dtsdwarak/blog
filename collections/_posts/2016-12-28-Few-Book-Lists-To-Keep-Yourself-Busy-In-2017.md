@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Few Book Lists To Keep Yourself Busy <s>in 2017</s> ever!
-tags: open, weekends
+tags: books
 ---
 
 Despite some bad experiences, 2016 has been a beautiful year - for having realized that books can be a great way to have fun, learn stuff, gain exposure and grow! Over the past 12 months, I might have bookmarked close to a 100 books, but never actually got the time to finish many. Most of them picked from the lists I found on social media. Here are few of those lists that piqued my interest - in a variety of subjects. I hope to complete a few this year and I guess you'll be equally interested in doing that too!
