@@ -32,7 +32,7 @@ One thing that is an absolute necessity is a monitoring stack. When you run thin
   * [Setting up auth with apache server](https://www.digitalocean.com/community/tutorials/how-to-set-up-password-authentication-with-apache-on-ubuntu-14-04)
 
 Here's the monitoring dashboard for my laptop.
-<img src="/assets/images/own-server/hcl-monitor.png" style="height:450px;">
+<img src="/assets/images/own-server/hcl-monitor.png">
 
 ### Optional Stuff
 
