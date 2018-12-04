@@ -30,3 +30,10 @@ Some of its best quotes here -
 4. “He was my mum and dad's best friend. He's a convicted murderer, but he's broken out of wizard prison and he's on the run. He likes to keep in touch with me, though...keep up with my news...check if I'm happy...”
 5. “Mischief Managed.”
 6. “The consequences of our actions are always so complicated, so diverse, that predicting the future is a very difficult business indeed.”
+
+### 4. Goblet of Fire
+
+1. "If you want to know what a man's like, take a good look at how he treats his inferiors, not his equals"
+2. "It matters not what someone is born, but what they grow to be"
+3. "Remember, if the time should come when you have to make a choice between what is right and what is easy, remember what happened to a boy who was good, and kind, and brave, because he strayed across the path of Lord Voldemort. Remember Cedric Diggory."
+4. "We are only as strong as we are united, as weak as we are divided."
