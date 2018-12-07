@@ -1,6 +1,6 @@
 # Blog
 
-Built with ```jekyll```. Visit the [Blog Page](https://blog.dwarak.in) to learn more.
+Built with ```gulp``` over ```jekyll```. Visit the [Blog Page](https://blog.dwarak.in) to learn more.
 
 ## Build
 
@@ -8,7 +8,8 @@ Built with ```jekyll```. Visit the [Blog Page](https://blog.dwarak.in) to learn 
 $ git clone git@gitlab.com:dtsdwarak/blog.git
 $ cd blog
 $ bundle install
-$ jekyll s
+$ npm install
+$ gulp release
 ```
 
 ## Help
