@@ -28,4 +28,4 @@ collections:
     output: true
     permalink: /:year/:month/:day/:title/
 
-exclude: ['README.md', 'LICENSE']
+exclude: ['README.md', 'LICENSE', 'package.json', 'node_modules', 'gulpfile.js', 'css', 'js', 'images']

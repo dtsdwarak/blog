@@ -2,3 +2,7 @@ _site/
 *.swp
 *.swo
 *.o
+node_modules/
+assets/
+.jekyll-metadata
+public/
