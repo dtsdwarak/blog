@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'Open Sans Regular';
+  src: url('Open-Sans-Regular.eot'); /* IE9 Compat Modes */
+  src: url('Open-Sans-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('Open-Sans-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('Open-Sans-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('Open-Sans-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('Open-Sans-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
+}

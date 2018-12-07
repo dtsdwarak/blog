@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'Inconsolata Regular';
+  src: url('Inconsolata-Regular.eot'); /* IE9 Compat Modes */
+  src: url('Inconsolata-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('Inconsolata-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('Inconsolata-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('Inconsolata-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('Inconsolata-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
+}

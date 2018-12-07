@@ -7,8 +7,6 @@
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize
 */
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Inconsolata');
-
 html {
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%
@@ -110,11 +108,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 		border-collapse: collapse!important
 	}
 }
-@font-face {
-	font-family: 'Glyphicons Halflings';
-	src: url(../fonts/glyphicons-halflings-regular.eot);
-	src: url(../fonts/glyphicons-halflings-regular.eot?#iefix) format('embedded-opentype'), url(../fonts/glyphicons-halflings-regular.woff) format('woff'), url(../fonts/glyphicons-halflings-regular.ttf) format('truetype'), url(../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format('svg')
-}
+
 * {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;

@@ -35,8 +35,6 @@
  * Update the foundational and global aspects of the page.
  */
 
-@import url('https://fonts.googleapis.com/css?family=Inconsolata');
-
 * {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
