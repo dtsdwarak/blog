@@ -1,25 +1,14 @@
-image: ruby:2.4.2
-
-test:
-  stage: test
-  script:
-  - bundle install
-  - bundle update
-  - gem install jekyll -v 3.8.5
-  - jekyll build -d test
-  artifacts:
-    paths:
-    - test
-  except:
-  - master
+image: dtsdwarak/ruby-nodejs:latest
 
 pages:
   stage: deploy
   script:
+  - npm install
+  - npm install -g gulp
   - bundle install
   - bundle update
   - gem install jekyll -v 3.8.5
-  - jekyll build -d public
+  - gulp release
   artifacts:
     paths:
     - public
