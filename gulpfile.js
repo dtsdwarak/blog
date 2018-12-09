@@ -10,7 +10,7 @@ const cleanCSS = require('gulp-clean-css');
 const imagemin = require('gulp-imagemin');
 
 const cssDevFiles = 'css/*.?(s)css';
-const jsDevFiles = 'js/jquery.min.js\', \'js/bootstrap.min.js';
+const jsDevFiles = ['js/jquery.min.js', 'js/bootstrap.min.js'];
 
 gulp.task('compressImages', () =>
   gulp.src('images/**/*')
@@ -40,9 +40,7 @@ gulp.task('compressImages', () =>
 );
 
 gulp.task('concatJS', () => {
-  return gulp.src([
-      jsDevFiles
-    ])
+  return gulp.src(jsDevFiles)
     .pipe(concat('site.js'))
     .pipe(gulp.dest('assets/js'));
 });
