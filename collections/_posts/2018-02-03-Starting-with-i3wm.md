@@ -24,6 +24,18 @@ Below are some shortcuts that can be used wih ```i3wm``` - more like notes from 
 10. Run dialog - ```Mod + D```
 11. Quit ```i3``` / Logout - ```Mod + Shift + E```
 
+### Update
+
+The progress so far has been pretty good. With the exception of following issues -
+
+1. Dual monitor display profile.
+2. Adjusting display profile upon dock/undock.
+3. File manager integration with GUI (like with Firefox etc). Clicking "open with File Manager" option on apps like Firefox crashes i3.
+4. Task bar integration for
+  - Bluetooth
+  - Sound
+5. Easy way to connect wifi networks (This I can still achieve via `nmcli`)
+
 ---
 
 More to follow!
