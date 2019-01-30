@@ -38,7 +38,6 @@ Some of its best quotes here -
 3. "Remember, if the time should come when you have to make a choice between what is right and what is easy, remember what happened to a boy who was good, and kind, and brave, because he strayed across the path of Lord Voldemort. Remember Cedric Diggory."
 4. "We are only as strong as we are united, as weak as we are divided."
 
-
 ### 5. Order Of Phoenix
 
 1. “Wit beyond measure is man’s greatest treasure.”
