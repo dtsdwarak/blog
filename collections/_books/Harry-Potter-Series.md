@@ -37,3 +37,12 @@ Some of its best quotes here -
 2. "It matters not what someone is born, but what they grow to be"
 3. "Remember, if the time should come when you have to make a choice between what is right and what is easy, remember what happened to a boy who was good, and kind, and brave, because he strayed across the path of Lord Voldemort. Remember Cedric Diggory."
 4. "We are only as strong as we are united, as weak as we are divided."
+
+
+### 5. Order Of Phoenix
+
+1. “Wit beyond measure is man’s greatest treasure.”
+2. “Indifference and neglect often do much more damage than outright dislike.”
+3. Things we lose have a way of coming back to us in the end, if not always in the way we expect
+4. Youth can not know how age thinks and feels. But old men are guilty if they forget what it was to be young.
+5. “You should write a book," Ron told Hermione as he cut up his potatoes, "translating mad things girls do so boys can understand them.
