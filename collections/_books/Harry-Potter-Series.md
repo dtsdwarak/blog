@@ -45,3 +45,11 @@ Some of its best quotes here -
 3. Things we lose have a way of coming back to us in the end, if not always in the way we expect
 4. Youth can not know how age thinks and feels. But old men are guilty if they forget what it was to be young.
 5. “You should write a book," Ron told Hermione as he cut up his potatoes, "translating mad things girls do so boys can understand them.
+
+### 6. Half Blood Prince
+
+1. “It is the unknown we fear when we look upon death and darkness, nothing more.” 
+2. “Dumbledore says people find it far easier to forgive others for being wrong than being right.”
+3. “When you have seen as much of life as I have, you will not underestimate the power of obsessive love.” 
+4. “Dumbledore's man through and through, aren't you Potter?". "Yeah I am," said Harry. "Glad we straightened that out.” 
+5. “Killing is not so easy as the innocent believe.” 
