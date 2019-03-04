@@ -115,5 +115,5 @@ This can be basic Operating system fundamentals or a little higher level of abst
 ## Resouces
 
 1. [teachyourselfcs.com](https://teachyourselfcs.com/) - Great reference for video courses, materials, references
-2. [My 100 Favorite Programming, Computer and Science Books - by catonmat](http://www.catonmat.net/category/my-favorite-books)
+2. [My 100 Favorite Programming, Computer and Science Books - by catonmat](https://catonmat.net/archive?q=favorite%20books)
 3. [CS Prep Guide](https://dtsdwarak.github.io/cs_prep/)
