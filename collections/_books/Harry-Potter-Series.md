@@ -53,3 +53,13 @@ Some of its best quotes here -
 3. “When you have seen as much of life as I have, you will not underestimate the power of obsessive love.” 
 4. “Dumbledore's man through and through, aren't you Potter?". "Yeah I am," said Harry. "Glad we straightened that out.” 
 5. “Killing is not so easy as the innocent believe.” 
+
+### 7. Deathly Hallows
+
+1. “Do not pity the dead, Harry. Pity the living, and, above all those who live without love.” 
+2. “We're all human, aren't we? Every human life is worth the same, and worth saving.” 
+3. “It is a curious thing, Harry, but perhaps those who are best suited to power are those who have never sought it. Those who, like you, have leadership thrust upon them, and take up the mantle because they must, and find to their own surprise that they wear it well.”
+4. “I'm going to keep going until I succeed — or die. Don't think I don't know how this might end. I've known it for years.” 
+5. “Words are, in my not-so-humble opinion, our most inexhaustible source of magic. Capable of both inflicting injury, and remedying it.   
+6. “Of course it is happening inside your head, Harry, but why on earth should that mean that it is not real?” 
+7. “Dumbledore watched her fly away, and as her silvery glow faded he turned back to Snape, and his eyes were full of tears. "After all this time?" "Always," said Snape.”
