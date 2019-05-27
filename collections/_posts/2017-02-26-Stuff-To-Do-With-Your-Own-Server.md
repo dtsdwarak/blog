@@ -52,6 +52,7 @@ Few things I'd like to have. Few of them hosted locally. And a few hosted in my 
 * Mastadon server - if you are really into social networking.
 * Self hosted git repositories - gitea or gitolite or Gitlab.
 * Orchestrate all of the services via Caddy Webserver.
+* Flickr alternatives - [MediaGoblin](https://www.mediagoblin.org/), [Piwigo](https://piwigo.com/), [Perkeep](https://perkeep.org/) etc
 
 ### Domain DNS hosting
 
