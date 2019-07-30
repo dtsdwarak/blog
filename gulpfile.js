@@ -12,7 +12,7 @@ const imagemin = require('gulp-imagemin');
 const cssDevFiles = 'css/*.?(s)css';
 const jsDevFiles = ['js/jquery.min.js', 'js/bootstrap.min.js'];
 
-gulp.task('compressImages', () =>
+gulp.task('compressImages', gulp.series(() =>
   gulp.src('images/**/*')
   .pipe(imagemin([
     imagemin.gifsicle({
@@ -36,42 +36,42 @@ gulp.task('compressImages', () =>
   ]), {
     verbose: true
   })
-  .pipe(gulp.dest('assets/images'))
+  .pipe(gulp.dest('assets/images')))
 );
 
-gulp.task('concatJS', () => {
+gulp.task('concatJS', gulp.series(() => {
   return gulp.src(jsDevFiles)
     .pipe(concat('site.js'))
     .pipe(gulp.dest('assets/js'));
-});
+}));
 
-gulp.task('concatCSS', () => {
+gulp.task('concatCSS', gulp.series(() => {
   return gulp.src([
       cssDevFiles
     ])
     .pipe(sass())
     .pipe(concat('site.css'))
     .pipe(gulp.dest('assets/css'));
-});
+}));
 
-gulp.task('minifyJS', ['concatJS'], () => {
+gulp.task('minifyJS', gulp.series(['concatJS'], () => {
   return gulp.src('assets/js/site.js')
     .pipe(minify())
     .on('error', (err) => {
       gutil.log(gutil.colors.red('[Error]'), err.toString());
     })
     .pipe(gulp.dest('assets/js'));
-});
+}));
 
-gulp.task('minifyCSS', ['concatCSS'], () => {
+gulp.task('minifyCSS', gulp.series(['concatCSS'], () => {
   return gulp.src('assets/css/site.css')
     .pipe(cleanCSS({
       compatibility: 'ie8'
     }))
     .pipe(gulp.dest('assets/css'));
-});
+}));
 
-gulp.task('clean', () => {
+gulp.task('clean', gulp.series(done => {
   const jekyll = child.spawn('jekyll', [
     'clean'
   ]);
@@ -82,9 +82,10 @@ gulp.task('clean', () => {
   };
   jekyll.stdout.on('data', jekyllLogger);
   jekyll.stderr.on('data', jekyllLogger);
-});
+  done();
+}));
 
-gulp.task('build-watch', ['compressImages', 'clean'], () => {
+gulp.task('build-watch', gulp.series(['compressImages', 'clean'], done => {
   const jekyll = child.spawn('jekyll', [
     'build',
     '--watch',
@@ -98,9 +99,10 @@ gulp.task('build-watch', ['compressImages', 'clean'], () => {
   };
   jekyll.stdout.on('data', jekyllLogger);
   jekyll.stderr.on('data', jekyllLogger);
-});
+  done();
+}));
 
-gulp.task('build', ['compressImages', 'clean'], () => {
+gulp.task('build', gulp.series(['compressImages', 'clean'], done => {
   const jekyll = child.spawn('jekyll', [
     'build',
     '-d', 'public'
@@ -112,9 +114,10 @@ gulp.task('build', ['compressImages', 'clean'], () => {
   };
   jekyll.stdout.on('data', jekyllLogger);
   jekyll.stderr.on('data', jekyllLogger);
-});
+  done();
+}));
 
-gulp.task('serve', () => {
+gulp.task('serve', gulp.series(done => {
   browserSync.init({
     files: [siteRoot + '/**'],
     port: 4000,
@@ -122,7 +125,8 @@ gulp.task('serve', () => {
       baseDir: siteRoot
     }
   });
-});
+  done();
+}));
 
-gulp.task('release', ['minifyCSS', 'minifyJS', 'build']);
-gulp.task('default', ['minifyCSS', 'minifyJS', 'build-watch', 'serve']);
+gulp.task('release', gulp.series(['minifyCSS', 'minifyJS', 'build']));
+gulp.task('default', gulp.series(['minifyCSS', 'minifyJS', 'build-watch', 'serve']));
