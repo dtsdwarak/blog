@@ -4,7 +4,7 @@ title: nVidia Does Hate Linux
 tags: nvidia, gpu, linux
 ---
 
-Last weekend was fantastic. One more line struck off from my to-do list. I had the chance to build my first desktop. While this isn't a post about how to choose the best PC parts, I'd like still you to know the parts I picked for my rant to make sense.
+Last weekend was fantastic. One more line struck off my to-do list. I had the chance to build my first desktop. While this isn't a post about how to choose the best PC parts, I'd still like you to know the parts I picked, for my rant to make sense.
 
 Type|Item
 :----|:----|
@@ -18,7 +18,7 @@ Keyboard | [Corsair K55 RGB Wired Gaming Keyboard](https://in.pcpartpicker.com/p
 
 <br/>
 
-Most of the choices were obvious. While I could've gone with the latest Ryzen 3000 series CPU, I didn't know how well the support was. Also, since I am yet to figure how I'll be using this CPU (definitely not extensive gaming) I didn't want to burn all my cash for a top-of-the-line costly choice, when I had a cheaper alternate(Ryzen 2000s) which more than compensated for what I would want. Price point is also the reason I went with AMD than Intel. Motherboard, ironically is a gaming motherboard which I'm guessing will prove useful if and when I plan to upgrade the parts. [NVMe](https://en.wikipedia.org/wiki/NVM_Express) based M.2 SSD disks are not a luxury anymore. The write speed is consistent between 600-750 MBps which translates to dramatic performance in boot and file access times. (Theoretically though they can touch 1GBps. Not sure which part of the read check below is a mistake though. :( ).
+Most of the choices were obvious. Though I could've gone with the latest Ryzen 3000 series CPU, I didn't know how well the support was. Also, since I am yet to figure how I'll be using this CPU (definitely not extensive gaming) I didn't want to burn all my cash for a top-of-the-line costly choice, when I had a cheaper alternate(Ryzen 2000s) that more than compensated for what I would want. Price point is also the reason I went with AMD than Intel. Motherboard, ironically is a gaming motherboard which I'm guessing will prove useful if and when I plan to upgrade the parts. [NVMe](https://en.wikipedia.org/wiki/NVM_Express) based M.2 SSD disks are not a luxury anymore. The write speed is consistent between 600-750 MBps which translates to dramatic performance in boot and file access times. Reads touch over 4 Gigs per second, which I'm guessing is a screw up with the script I wrote. Theoretically though they can touch 1GBps.
 
 ```bash
 $ sync; dd if=/dev/zero of=/tmp/tempfile bs=512M count=10 oflag=dsync status=progress;
@@ -33,11 +33,11 @@ $ sync; dd if=/tmp/tempfile of=/dev/null bs=512M count=10 oflag=dsync status=pro
 5368709120 bytes (5.4 GB, 5.0 GiB) copied, 1.2505 s, 4.3 GB/s
 ```
 
-Total wattage of the CPU came about 220W, for which 450W Corsair SMPS also fit the bill. The one-fucked-up-decision I did was to get a nVidia based Graphics Card!
+Power consumption of the CPU came about 220W, for which 450W Corsair SMPS also fit the bill. The one-fucked-up-decision I took was to get a nVidia based Graphics Card!
 
-While I didn't know earlier that [nVidia hated Linux](https://www.reddit.com/r/linuxmasterrace/comments/50n99n/why_nvidia_is_so_unfriendly_with_linux/), I definitely didn't expect the support to be this bad. I didn't want to compromise on  my CPU's display refresh rate and I made sure I got a graphics card that gave [4k resolution with 60Hz refresh rate](https://www.geforce.com/hardware/desktop-gpus/geforce-gt-710/specifications).
+While I didn't know earlier that [nVidia hated Linux](https://www.reddit.com/r/linuxmasterrace/comments/50n99n/why_nvidia_is_so_unfriendly_with_linux/), I definitely didn't expect the support to be this bad. I didn't want to compromise on my CPU's display refresh rate and I made sure I got a graphics card that gave [4k resolution with 60Hz refresh rate](https://www.geforce.com/hardware/desktop-gpus/geforce-gt-710/specifications).
 
-I flashed my drive with Ubuntu MATE 18.04.2 LTS and all was well until I upgraded my desktop to the latest nVidia 430.26 driver. While my resolution was still showing 60Hz at 3840x2160 4k resolution, I was seeing my screen getting torn by the subsequent frames that it tried to process. Thanks to nVidia, Freesync(or GSync as they call it) was [not supported with HDMI](https://forums.geforce.com/default/topic/1094573/geforce-drivers/freesync-with-hdmi/). After a bunch of trials, I had to downgrade the resolution to a more comfortable QHD 2560x1440 resolution.
+I flashed my drive with Ubuntu MATE 18.04.2 LTS and all was well until I upgraded my desktop to the latest nVidia 430.26 driver. Even when I was able to set 60Hz refresh rate for 3840x2160 4k resolution, I was seeing my screen getting torn by the subsequent frames that it tried to process. Thanks to nVidia, Freesync(or GSync as they call it) was [not supported with HDMI](https://forums.geforce.com/default/topic/1094573/geforce-drivers/freesync-with-hdmi/) too. After a bunch of experiements, I had to downgrade to a more comfortable QHD 2560x1440 resolution.
 
 MATE Desktop complicates this by failing to detect the window scaling factor. (Setting within the `mate-tweak` tool.).
 
