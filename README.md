@@ -1,6 +1,6 @@
 # Blog
 
-Built with ```gulp``` over ```jekyll```. Visit the [Blog Page](https://blog.dwarak.in) to learn more.
+Built with `gulp` over `jekyll`. Visit the [Blog Page](https://blog.dwarak.in) to learn more.
 
 ## Build
 
