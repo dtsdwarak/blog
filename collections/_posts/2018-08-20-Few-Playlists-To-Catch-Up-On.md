@@ -23,6 +23,7 @@ More relevant material can be found at [teachyourselfcs.com](https://teachyourse
 
 1. [Electronic Basics by GreatScott!](https://www.youtube.com/playlist?list=PLAROrg3NQn7cyu01HpOv5BWo217XWBZu0)
 2. [Comprehensive Guide To pfSense 2.3](https://www.youtube.com/playlist?list=PLE726R7YUJTePGvo0Zga2juUBxxFTH4Bk)
+3. [Ben Eater's Electronics Playlists](https://www.youtube.com/user/eaterbc/playlists)
 
 ## Economics/History
 
