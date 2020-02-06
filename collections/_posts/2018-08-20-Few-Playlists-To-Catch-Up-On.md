@@ -15,6 +15,7 @@ Over time I had aggregated a bunch of YouTube playlists that I wanted to follow 
 5. [15-445/645 Intro to Database Systems (Fall 2018)](https://www.youtube.com/playlist?list=PLSE8ODhjZXja3hgmuwhf89qboV1kOxMx7)
 6. [MIT 6.006 Introduction to Algorithms, Fall 2011](https://www.youtube.com/playlist?list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb)
 7. [Essence of calculus](https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr)
+8. [MIT 6.001 Structure and Interpretation, 1986](https://www.youtube.com/playlist?list=PLE18841CABEA24090)
 
 More relevant material can be found at [teachyourselfcs.com](https://teachyourselfcs.com).
 
