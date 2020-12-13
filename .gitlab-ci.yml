@@ -4,10 +4,10 @@ pages:
   stage: deploy
   script:
   - npm install
-  - npm install -g gulp
+  - npm install -g gulp-cli
   - bundle install
   - bundle update
-  - gem install jekyll -v 3.8.5
+  - gem install jekyll -v 3.8.7
   - gulp release
   artifacts:
     paths:

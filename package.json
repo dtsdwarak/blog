@@ -21,13 +21,19 @@
   },
   "homepage": "https://gitlab.com/dtsdwarak/blog#README",
   "devDependencies": {
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.26.12",
     "gulp": "^4.0.2",
-    "gulp-babel-minify": "^0.5.0",
-    "gulp-clean-css": "^4.0.0",
+    "gulp-babel-minify": "^0.5.1",
+    "gulp-clean-css": "^4.3.0",
     "gulp-concat": "^2.6.1",
-    "gulp-imagemin": "^5.0.3",
-    "gulp-sass": "^4.0.2",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^4.1.0",
     "gulp-util": "^3.0.8"
+  },
+  "dependencies": {
+    "imagemin-gifsicle": "^7.0.0",
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-optipng": "^8.0.0",
+    "imagemin-svgo": "^8.0.0"
   }
 }
