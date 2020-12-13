@@ -4,18 +4,18 @@ name: Dwarak
 description: Code. Life. Fun.
 
 # url is currently only used only for the RSS feed in feed.xml
-url:  https://blog.dwarak.in
+url: https://blog.dwarak.in
 
 # baseurl will often be '', but for a project page on gh-pages, it needs to
 # be the project name.
 # *** IMPORTANT: If your local "jekyll serve" throws errors change this to '' or
 #     run it like so: jekyll serve --baseurl=''
-baseurl: ''
+baseurl: ""
 paginate: 3
 
 highlighter: rouge
 markdown: kramdown
-plugins: ['jekyll-paginate']
+plugins: ["jekyll-paginate"]
 
 # Jekyll collections
 # Documentation - https://jekyllrb.com/docs/collections/
@@ -31,4 +31,17 @@ collections:
     output: true
     permalink: /:year/:month/:day/:title/
 
-exclude: ['README.md', 'LICENSE', 'package.json', 'node_modules', 'gulpfile.js', 'css', 'js', 'images']
+exclude:
+  [
+    "README.md",
+    "LICENSE",
+    "package.json",
+    "node_modules",
+    "gulpfile.js",
+    "css",
+    "js",
+    "images",
+    "package-lock.json",
+    "Gemfile.lock",
+    "Gemfile",
+  ]
