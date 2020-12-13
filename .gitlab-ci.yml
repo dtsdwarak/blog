@@ -1,4 +1,4 @@
-image: dtsdwarak/ruby-nodejs:latest
+image: dtsdwarak/minideb-ruby-nodejs:latest
 
 pages:
   stage: deploy
