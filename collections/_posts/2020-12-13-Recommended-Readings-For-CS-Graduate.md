@@ -10,7 +10,7 @@ tags: books, computer science
 
 1. Start following the [morning paper](https://blog.acolyer.org/) - small pieces of wisdom that you can accumulate everyday
 2. [Some book recommendations that every programmer should read - previous lobsters thread](https://lobste.rs/s/wqujvc/books_every_programmer_should_read). Do check out [hwayne@’s response](https://lobste.rs/s/wqujvc/books_every_programmer_should_read#c_ngzhio).
-3. You will surely find something interesting to pick at [HackerNewsBooks book aggregator](https://hackernewsbooks.com/) - alongside some fiction/non-fiction too. **[NOTE - The site's aggregation functionality has been down for a while]**
+3. You will surely find something interesting to pick at [HackerNewsBooks book aggregator](https://hackernewsbooks.com/) - alongside some fiction/non-fiction too. ~~[NOTE - The site's aggregation functionality has been down for a while]~~ **The site is back up now.**
 4. Follow [PapersWeLove](https://github.com/papers-we-love/papers-we-love)
 
 ### Some of my personal favourites here
