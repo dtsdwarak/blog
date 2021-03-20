@@ -30,6 +30,9 @@ collections:
   posts:
     output: true
     permalink: /:year/:month/:day/:title/
+  finance:
+    output: true
+    permalink: /:collection/:title/
 
 exclude:
   [
