@@ -1,13 +1,21 @@
-const browserSync = require("browser-sync").create();
+import browsersync from 'browser-sync'
+import child from 'child_process'
+import gulp from 'gulp'
+import gutil from 'gulp-util'
+import concat from 'gulp-concat'
+import minify from 'gulp-babel-minify'
+import cleanCSS from 'gulp-clean-css'
+import imagemin from 'gulp-imagemin'
+import imageminGifsicle from 'imagemin-gifsicle'
+import imageminMozjpeg from 'imagemin-mozjpeg'
+import imageminOptipng from 'imagemin-optipng'
+import imageminSvgo from 'imagemin-svgo'
+import dartSass from 'sass'
+import gulpSass from 'gulp-sass'
+
+const sass = gulpSass(dartSass)
+const browserSync = browsersync.create();
 const siteRoot = "_site";
-const child = require("child_process");
-const gulp = require("gulp");
-const gutil = require("gulp-util");
-const concat = require("gulp-concat");
-const sass = require("gulp-sass");
-const minify = require("gulp-babel-minify");
-const cleanCSS = require("gulp-clean-css");
-const imagemin = require("gulp-imagemin");
 
 const cssDevFiles = "css/*.?(s)css";
 const jsDevFiles = ["js/jquery.min.js", "js/bootstrap.min.js"];
@@ -17,16 +25,16 @@ gulp.task("compressImages", () =>
     .src("images/**/*")
     .pipe(
       imagemin([
-        imagemin.gifsicle({
+        imageminGifsicle({
           interlaced: true,
         }),
-        imagemin.mozjpeg({
+        imageminMozjpeg({
           progressive: true,
         }),
-        imagemin.optipng({
+        imageminOptipng({
           optimizationLevel: 5,
         }),
-        imagemin.svgo({
+        imageminSvgo({
           plugins: [
             {
               removeViewBox: true,
