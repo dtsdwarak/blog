@@ -20,6 +20,7 @@ Over time I had aggregated a bunch of YouTube playlists that I wanted to follow 
 10. [Distributed Systems lecture series - University of Cambridge](https://www.youtube.com/playlist?list=PLeKd45zvjcDFUEv_ohr_HdUFe97RItdiB)
   - [Associated Reading Material](https://www.cl.cam.ac.uk/teaching/2021/ConcDisSys/dist-sys-notes.pdf)
 11. [MIT 18.404J Theory of Computation, Fall 2020](https://www.youtube.com/playlist?list=PLUl4u3cNGP60_JNv2MmK3wkOt9syvfQWY)
+12. [MIT 6.172 Performance Engineering of Software Systems, Fall 2018](https://www.youtube.com/playlist?list=PLUl4u3cNGP63VIBQVWguXxZZi0566y7Wf)
 
 More relevant material can be found at [teachyourselfcs.com](https://teachyourselfcs.com).
 
@@ -33,6 +34,10 @@ More relevant material can be found at [teachyourselfcs.com](https://teachyourse
 
 1. [Contemporary Themes in India’s Economy by Dr Arvind Subramanian](https://www.youtube.com/playlist?list=PL0x7Tsixz0flbu4qaVnulcOJ3zhlEFP6E) -- [Course Page](http://www.iitd.ac.in/CEAIITD/index.html).
 2. [Pradhanmantri: Season 1](https://www.youtube.com/playlist?list=ELYR5txmTpa_c)
+
+## Behavioral Sciences
+
+1. [MIT 9.13 The Human Brain, Spring 2019](https://www.youtube.com/playlist?list=PLUl4u3cNGP60IKRN_pFptIBxeiMc0MCJP)
 
 ---
 
