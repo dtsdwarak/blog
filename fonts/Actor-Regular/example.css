@@ -1,9 +1,0 @@
-@font-face {
-  font-family: 'Actor Regular';
-  src: url('Actor-Regular.eot'); /* IE9 Compat Modes */
-  src: url('Actor-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('Actor-Regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('Actor-Regular.woff') format('woff'), /* Pretty Modern Browsers */
-       url('Actor-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('Actor-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
-}

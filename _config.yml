@@ -11,11 +11,10 @@ url: https://blog.dwarak.in
 # *** IMPORTANT: If your local "jekyll serve" throws errors change this to '' or
 #     run it like so: jekyll serve --baseurl=''
 baseurl: ""
-paginate: 3
 
-highlighter: rouge
-markdown: kramdown
-plugins: ["jekyll-paginate"]
+repo:
+  repository_url: https://github.com/dtsdwarak/blog
+  branch: master
 
 # Jekyll collections
 # Documentation - https://jekyllrb.com/docs/collections/

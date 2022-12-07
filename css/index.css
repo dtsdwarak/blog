@@ -1,0 +1,157 @@
+/*
+  Fonts
+  To use Google Fonts locally, use -
+  https://www.axllent.org/code/google-font-downloader/
+*/
+
+@font-face {
+  font-family: 'Inconsolata';
+  src: url('/fonts/Inconsolata-Regular/Inconsolata-Regular.eot'); /* IE9 Compat Modes */
+  src: url('/fonts/Inconsolata-Regular/Inconsolata-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/fonts/Inconsolata-Regular/Inconsolata-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/fonts/Inconsolata-Regular/Inconsolata-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('/fonts/Inconsolata-Regular/Inconsolata-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('/fonts/Inconsolata-Regular/Inconsolata-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+body {
+  background-color: #dbdbdb;
+  color: black;
+  font-size: 16px;
+  margin: 0px auto 0px auto;
+  padding: 0px 1em 0px 1em;
+  max-width: 40%;
+  overflow-x: hidden;
+}
+
+header#top #name {
+  vertical-align: text-bottom;
+  height: 1em;
+  margin-bottom: 2px;
+}
+
+header#top nav {
+  display: table;
+  float: right;
+  margin: 0;
+}
+
+header {
+  font-weight: bold;
+  font-size: 20px;
+  border-bottom: 2px solid black;
+  margin-bottom: 30px;
+  padding: 12px 0px 12px 0px;
+}
+
+#name, nav a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  padding-left: 6px;
+  padding-right: 6px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+#name, nav a:first {
+  border-left: none;
+} 
+footer {
+  border-top: solid 2px black;
+  color: #555;
+  font-size: 12px;
+  margin-top: 30px;
+  padding: 12px 0px 12px 0px;
+  text-align: right;
+}
+h1 {
+  font-size: 24px;
+}
+h2 {
+  font-size: 20px;
+}
+article .header {
+  color: #555;
+  font-size: 14px;
+  font-style: italic;
+}
+.logo a {
+  color: black;
+  float: left;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+}
+pre {
+  max-width: 100%;
+  overflow-x: scroll;
+  background-color: #eeeeee;
+  padding: 1em;
+}
+figure {
+  padding: 1em;
+}
+figure > img {
+  max-width: 100%;
+  display: block;
+  margin: auto;
+  padding-bottom: 0.5em;
+}
+
+img {
+  border: 0;
+  height: 100%;
+  width: 100%;
+  max-width: 100% !important;
+  vertical-align: middle;
+}
+
+tr, img {
+  page-break-inside: avoid;
+}
+article figcaption {
+  text-align: center;
+}
+
+/* mobile version */
+@media only screen and (max-width: 80ch) {
+
+  body {
+    max-width: 80%;
+  }
+
+  header#top #name {
+    display: block;
+    text-align: center;
+    margin-top: 5%;
+  }
+
+  header#top nav {
+    margin-top: 5%;
+    float: none;
+    text-align: center;
+    display: block;
+  }
+
+  /* .side:not(.small) {
+    display: table;
+    max-width: 100%;
+    float: unset;
+    margin: auto;
+  } */
+
+  figure {
+    margin: 0;
+  }
+}
+
+/* printable version */
+@media print {
+  html {
+    margin: initial;
+    max-width: unset;
+  }
+  header#top {
+    display: none;
+  }
+}

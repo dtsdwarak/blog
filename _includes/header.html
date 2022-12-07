@@ -16,64 +16,18 @@
   <meta name="author" content="Dwarak">
   <!-- Search Headers End -->
 
-  <!-- Facebook Headers-->
-  <meta property="og:title" content="{{ page.title }}">
-  <meta property="og:description" content="{{ page.content | strip_html | xml_escape | truncate: 200 }}">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
-  <meta property="og:image" content="{{site.baseurl}}/assets/images/d.png">
-  <meta property="og:site_name" content="Dwarak's Blog">
-  <!-- Facebook Headers Ends -->
-
-  <!-- Twitter Cards -->
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:site" content="@dtsdwarak">
-  <meta name="twitter:creator" content="@dtsdwarak">
-  {% if page.title %}
-    <meta name="twitter:title" content="{{ page.title }}">
-  {% else %}
-    <meta name="twitter:title" content="{{ site.name }}">
-  {% endif %}
-  {% if page.url %}
-    <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
-  {% endif %}
-    <meta name="twitter:description" content="{{ page.content | strip_html | xml_escape | truncate: 200 }}">
-    <meta name="twitter:image:src" content="{{site.baseurl}}/assets/images/d.png">
-
-  <!-- Schema.org for Google Plus -->
-  <meta itemprop="name" content="{{ page.title }}">
-  <meta itemprop="description" content="{{ page.content | strip_html | xml_escape | truncate: 200 }}">
-  <meta itemprop="image" content="{{site.baseurl}}/assets/images/d.png">
-
-  <script src="{{ site.baseurl }}/assets/js/site.js"></script>
   <link href="{{ site.baseurl }}/assets/css/site.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-
-  <div class="container-fluid">
-    <div class="row-fluid">
-      <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="{{ site.baseurl }}/">{{ site.name }}</a>
-        </div>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="{{ site.baseurl }}/">Home</a></li>
-            <li class="active visible-xs-block"><a href="{{ site.baseurl }}/links/">Links</a></li>
-            <li class="active"><a href="{{ site.baseurl }}/about/">About</a></li>
-            <li class="active"><a href="{{ site.baseurl }}/books/">Books</a></li>
-            <li class="active"><a href="{{ site.baseurl }}/travelogue/">Travel</a></li>
-            <li class="active"><a href="{{ site.baseurl }}/finance/">Finance</a></li>
-            <li class="active"><a href="{{ site.baseurl }}/feed.xml">RSS</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
+  <header id="top">
+    <span id="name">
+      <a class="regular" href="/">Dwarak's Weblog</a>
+    </span>
+    <nav>
+      <a href="{{ site.baseurl }}/about/">About</a> |
+      <a href="{{ site.baseurl }}/books/">Books</a> |
+      <a href="{{ site.baseurl }}/feed.xml">RSS</a>
+    </nav>
+  </header>
+</body>

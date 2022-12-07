@@ -3,7 +3,7 @@ layout: default
 permalink: /books/
 ---
 
-<div class="well">
+<div>
 
   <h2> Book Notes </h2>
   <p> Reviews/Notes of some books that I've read </p>
@@ -12,8 +12,8 @@ permalink: /books/
   {% assign books = site.books | where_exp:"item", "item.title != 'Index'" %}
   {% for book in books %}
       <section>
-          <h4>{{ forloop.index }}. <a href="{{ site.baseurl}}{{ book.url }}">{{ book.title }}</a></h4>
-          {{ book.author }}
+          <h4><b>{{ forloop.index }}. <a href="{{ site.baseurl}}{{ book.url }}">{{ book.title }}</a></b></h4>
+          <i>{{ book.author }}</i>
       </section>
   {% endfor %}
 </div>

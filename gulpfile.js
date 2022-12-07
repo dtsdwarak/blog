@@ -3,7 +3,6 @@ import child from 'child_process'
 import gulp from 'gulp'
 import gutil from 'gulp-util'
 import concat from 'gulp-concat'
-import minify from 'gulp-babel-minify'
 import cleanCSS from 'gulp-clean-css'
 import imagemin from 'gulp-imagemin'
 import imageminGifsicle from 'imagemin-gifsicle'
@@ -18,7 +17,6 @@ const browserSync = browsersync.create();
 const siteRoot = "_site";
 
 const cssDevFiles = "css/*.?(s)css";
-const jsDevFiles = ["js/jquery.min.js", "js/bootstrap.min.js"];
 
 gulp.task("compressImages", () =>
   gulp
@@ -52,13 +50,6 @@ gulp.task("compressImages", () =>
     .pipe(gulp.dest("assets/images"))
 );
 
-gulp.task("concatJS", () => {
-  return gulp
-    .src(jsDevFiles)
-    .pipe(concat("site.js"))
-    .pipe(gulp.dest("assets/js"));
-});
-
 gulp.task("concatCSS", () => {
   return gulp
     .src([cssDevFiles])
@@ -66,19 +57,6 @@ gulp.task("concatCSS", () => {
     .pipe(concat("site.css"))
     .pipe(gulp.dest("assets/css"));
 });
-
-gulp.task(
-  "minifyJS",
-  gulp.series("concatJS", () => {
-    return gulp
-      .src("assets/js/site.js")
-      .pipe(minify())
-      .on("error", (err) => {
-        gutil.log(gutil.colors.red("[Error]"), err.toString());
-      })
-      .pipe(gulp.dest("assets/js"));
-  })
-);
 
 gulp.task(
   "minifyCSS",
@@ -155,8 +133,8 @@ gulp.task("serve", function (done) {
   done();
 });
 
-gulp.task("release", gulp.series(["minifyCSS", "minifyJS", "build"]));
+gulp.task("release", gulp.series(["minifyCSS", "build"]));
 gulp.task(
   "default",
-  gulp.series(["minifyCSS", "minifyJS", "build-watch", "serve"])
+  gulp.series(["minifyCSS", "build-watch", "serve"])
 );
