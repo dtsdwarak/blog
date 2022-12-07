@@ -23,15 +23,9 @@ collections:
   books:
     output: true
     permalink: /:collection/:title/
-  travel:
-    output: true
-    permalink: /:collection/:title/
   posts:
     output: true
     permalink: /:year/:month/:day/:title/
-  finance:
-    output: true
-    permalink: /:collection/:title/
 
 exclude:
   [
