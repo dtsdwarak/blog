@@ -4,3 +4,4 @@ ruby RUBY_VERSION
 gem 'jekyll', '~> 4.3'
 gem 'i18n', '>= 1.14.5'
 gem 'jekyll-paginate', '~> 1.1'
+gem 'rake', '13.2.1'
