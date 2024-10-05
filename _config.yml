@@ -14,7 +14,7 @@ baseurl: "blog"
 
 repo:
   repository_url: https://github.com/dtsdwarak/blog
-  branch: master
+  branch: main
 
 # Jekyll collections
 # Documentation - https://jekyllrb.com/docs/collections/
