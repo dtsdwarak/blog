@@ -10,7 +10,7 @@ url: https://blog.dwarak.in
 # be the project name.
 # *** IMPORTANT: If your local "jekyll serve" throws errors change this to '' or
 #     run it like so: jekyll serve --baseurl=''
-baseurl: ""
+baseurl: "blog"
 
 repo:
   repository_url: https://github.com/dtsdwarak/blog
