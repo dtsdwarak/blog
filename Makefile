@@ -16,6 +16,10 @@ local: ## Test changes locally
 	@echo "Running gulp task..."
 	gulp
 
+release: ## Build changes locally
+	@echo "Running gulp task to just build artifacts..."
+	gulp release
+
 update-gems: ## Update ruby gems
 	@echo "Updating Ruby gems..."
 	bundle update

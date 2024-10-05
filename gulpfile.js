@@ -68,7 +68,7 @@ gulp.task("build-watch", gulp.series("compressImages", "clean", (done) => {
   jekyll.on("close", done);
 }));
 
-gulp.task("build", gulp.series("compressImages", "clean", (done) => {
+gulp.task("build", gulp.series("clean", (done) => {
   const jekyll = spawn("jekyll", ["build", "-d", "public"]);
   jekyll.stdout.on("data", (data) => log("Jekyll:", data.toString()));
   jekyll.stderr.on("data", (data) => log("Jekyll:", data.toString()));
