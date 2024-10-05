@@ -1,0 +1,18 @@
+---
+layout: default
+permalink: /papers/
+---
+
+<div>
+
+  <h2> Paper Notes </h2>
+  <p> Notes from papers that I've read </p>
+  <hr/>
+
+  {% assign papers = site.papers | where_exp:"item", "item.title != 'Index'" %}
+  {% for paper in papers %}
+      <section>
+          <h4><b>{{ forloop.index }}. <a href="{{ site.baseurl}}{{ paper.url }}">{{ paper.title }}</a></b></h4>
+      </section>
+  {% endfor %}
+</div>

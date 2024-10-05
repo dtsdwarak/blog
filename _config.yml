@@ -23,6 +23,9 @@ collections:
   books:
     output: true
     permalink: /:collection/:title/
+  papers:
+    output: true
+    permalink: /:collection/:title/
   posts:
     output: true
     permalink: /:year/:month/:day/:title/
