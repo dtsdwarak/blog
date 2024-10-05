@@ -87,4 +87,4 @@ gulp.task("serve", (done) => {
 });
 
 gulp.task("release", gulp.series("minifyCSS", "build"));
-gulp.task("default", gulp.series("minifyCSS", "build-watch", "serve"));
+gulp.task("default", gulp.series("minifyCSS", gulp.parallel("build-watch", "serve")));
