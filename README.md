@@ -7,9 +7,7 @@ Built with `gulp` over `jekyll`. Visit the [Blog Page](https://blog.dwarak.in) t
 ```bash
 $ git clone git@gitlab.com:dtsdwarak/blog.git
 $ cd blog
-$ bundle install
-$ npm install
-$ gulp release
+$ make gitlab-install
 ```
 
 ## Help

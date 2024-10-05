@@ -3,11 +3,7 @@ image: dtsdwarak/minideb-ruby-nodejs:ruby-3.3.4
 pages:
   stage: deploy
   script:
-  - npm install
-  - npm install -g gulp-cli
-  - bundle install
-  - bundle update
-  - gulp release
+  - make gitlab-install
   artifacts:
     paths:
     - public
