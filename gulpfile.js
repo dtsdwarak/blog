@@ -14,13 +14,13 @@ import log from 'fancy-log';
 
 const sass = gulpSass(dartSass);
 const browserSync = browsersync.create();
-const siteRoot = "_site";
+const siteRoot = "public";
 
 const cssDevFiles = "css/*.?(s)css";
 
 gulp.task("compressImages", () =>
   gulp
-    .src("images/**/*")
+    .src("images/**/*", {encoding: false})
     .pipe(
       imagemin([
         imageminGifsicle({ interlaced: true }),
@@ -62,14 +62,14 @@ gulp.task("clean", (done) => {
 });
 
 gulp.task("build-watch", gulp.series("compressImages", "clean", (done) => {
-  const jekyll = spawn("jekyll", ["build", "--watch", "--incremental", "--drafts"]);
+  const jekyll = spawn("jekyll", ["build", "--watch", "--incremental", "--drafts", "-d", `${siteRoot}`]);
   jekyll.stdout.on("data", (data) => log("Jekyll:", data.toString()));
   jekyll.stderr.on("data", (data) => log("Jekyll:", data.toString()));
   jekyll.on("close", done);
 }));
 
 gulp.task("build", gulp.series("compressImages", "clean", (done) => {
-  const jekyll = spawn("jekyll", ["build", "-d", "public"]);
+  const jekyll = spawn("jekyll", ["build", "-d", `${siteRoot}`]);
   jekyll.stdout.on("data", (data) => log("Jekyll:", data.toString()));
   jekyll.stderr.on("data", (data) => log("Jekyll:", data.toString()));
   jekyll.on("close", done);
