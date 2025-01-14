@@ -14,6 +14,24 @@
        url('/fonts/Inconsolata-Regular/Inconsolata-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
+@font-face {
+  font-family: 'Adobe Clean Light';
+  src: url('/fonts/adobe-clean-light/AdobeClean-Light.eot'); /* IE9 Compat Modes */
+  src: url('/fonts/adobe-clean-light/AdobeClean-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/fonts/adobe-clean-light/AdobeClean-Light.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/fonts/adobe-clean-light/AdobeClean-Light.woff') format('woff'), /* Pretty Modern Browsers */
+       url('/fonts/adobe-clean-light/AdobeClean-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'Adobe Clean Regular';
+  src: url('/fonts/adobe-clean-regular/AdobeClean-Regular.eot'); /* IE9 Compat Modes */
+  src: url('/fonts/adobe-clean-regular/AdobeClean-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/fonts/adobe-clean-regular/AdobeClean-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/fonts/adobe-clean-regular/AdobeClean-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('/fonts/adobe-clean-regular/AdobeClean-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
 body {
   background-color: #dbdbdb;
   color: black;
@@ -22,7 +40,17 @@ body {
   padding: 0px 1em 0px 1em;
   max-width: 40%;
   overflow-x: hidden;
+  font-family: 'Adobe Clean Light';
+  font-weight: 300;
+  font-style: normal;
 }
+
+h1, h2, h3, h4, h5, h6, .header {
+  font-family: 'Adobe Clean Regular';
+  font-weight: 300;
+  font-style: normal;
+}
+
 
 header#top #name {
   vertical-align: text-bottom;
