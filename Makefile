@@ -1,6 +1,8 @@
 .PHONY: gitlab-install local update-gems help
 
 gitlab-install: ## Release changes in Gitlab runner
+	@echo "Set NPM Registry"
+	npm config set registry https://registry.npmjs.org
 	@echo "Installing npm packages..."
 	npm install
 	@echo "Installing gulp-cli globally..."
